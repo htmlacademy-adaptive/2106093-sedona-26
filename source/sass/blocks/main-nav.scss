@@ -1,0 +1,36 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 56px;
+}
+
+.main-nav__logo {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 185px;
+  height: 96px;
+}
+
+.main-nav__toggle-open {
+  padding: 17px 20px 12px;
+  display: block;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.main-nav__toggle-close {
+  padding: 17px 20px 12px;
+  order: 1;
+  display: block;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
