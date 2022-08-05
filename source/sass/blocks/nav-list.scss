@@ -9,6 +9,7 @@
   z-index: 1;
   position: absolute;
   top: 0;
+  display: none;
 }
 
 .nav-list__item {
@@ -32,3 +33,4 @@
   linear-gradient(180deg, rgba(0, 0, 0, 0) 0%,
   rgba(0, 0, 0, 0.2) 100%);
 }
+
