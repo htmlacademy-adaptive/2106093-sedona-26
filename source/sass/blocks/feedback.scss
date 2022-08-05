@@ -1,0 +1,18 @@
+.name-form,
+.contacts-form,
+.radio-form,
+.checkbox-form,
+.comment-form {
+  border: none;
+  padding: 24px 0 29px;
+}
+
+.feedback__name-form,
+.feedback__contacts-form,
+.feedback__radio-form,
+.feedback__checkbox-form {
+  margin-top: 24px;
+  padding: 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
