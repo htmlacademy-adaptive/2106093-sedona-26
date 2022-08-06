@@ -1,3 +1,29 @@
 .modal__button {
   margin: 0 auto;
+  min-width: 180px;
+}
+
+.modal__heading-error {
+  padding: 45px 42px 28px;
+}
+
+.modal__button-wrapper-error {
+  padding-bottom: 35px;
+}
+
+.modal__heading-sent {
+  padding: 39px 38px 30px;
+}
+
+.modal__button-wrapper-sent {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.modal__title {
+  margin: 0 0 30px;
+}
+
+.modal__subtitle {
+  margin: 0;
 }
