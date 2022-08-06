@@ -81,7 +81,7 @@
 
 .main-nav__logo {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 185px;
@@ -116,10 +116,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   z-index: 1;
   position: absolute;
   top: 0;
+}
+
+.nav-list--active {
   display: none;
 }
 
@@ -131,14 +134,14 @@
   padding: 17px 10px 12px;
   box-sizing: border-box;
   color: #ffffff;
-  box-shadow: 0px -1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 -1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   font-size: 18px;
   line-height: 26px;
   position: relative;
 }
 
 .nav-list__item:last-child {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: linear-gradient 180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%;
 }
 
 .index-intro {
@@ -164,7 +167,7 @@
 
 .feedback__heading {
   padding: 37px 20px 25px;
-  border-bottom: solid 1px #E5E5E5;
+  border-bottom: solid 1px #e5e5e5;
 }
 
 .heading__title {
@@ -178,7 +181,6 @@
 .heading__subtitle {
   margin: 0;
   padding: 0 3px;
-  margin: 0;
 }
 
 .advantages-list {
@@ -220,12 +222,12 @@
 
 .advantages-list__text-wrapper--light {
   color: #ffffff;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   padding: 33px 19px 0;
 }
 
 .advantages-list__item--back-dark {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   padding: 33px 19px 0;
 }
 
@@ -284,7 +286,7 @@
   background-color: #81b3d2;
   color: #ffffff;
   font-weight: 700;
-  padding: 16px 0px;
+  padding: 16px 0;
   text-align: center;
   display: block;
   max-width: 458px;
@@ -314,7 +316,7 @@
 }
 
 .social__item {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   padding: 17px 12px 8px;
   margin: 3px 3px;
   box-sizing: border-box;
@@ -351,7 +353,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
-  border-bottom: solid 1px #E5E5E5;
+  border-bottom: solid 1px #e5e5e5;
 }
 
 .card__author {
@@ -440,7 +442,7 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   padding: 16px 40px 16px 16px;
 }
@@ -451,7 +453,6 @@
 }
 
 .form__name,
-.form__surname,
 .form__surname,
 .form__email,
 .form__phone {
