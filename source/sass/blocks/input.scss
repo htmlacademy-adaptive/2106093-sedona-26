@@ -1,9 +1,16 @@
 .input {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 700;
   background-color: #f2f2f2;
   border: none;
   padding: 16px 40px 16px 16px;
+}
+
+.input--comment {
+  min-height: 150px;
+  padding-right: 16px;
+  resize: none;
+  box-sizing: border-box;
 }
