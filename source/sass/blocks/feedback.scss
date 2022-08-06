@@ -3,21 +3,8 @@
   border-bottom: solid 1px #e5e5e5;
 }
 
-.name-form,
-.contacts-form,
-.radio-form,
-.checkbox-form,
-.comment-form {
-  border: none;
-  padding: 24px 0 29px;
-}
-
-.feedback__name-form,
-.feedback__contacts-form,
-.feedback__radio-form,
-.feedback__checkbox-form {
-  margin-top: 24px;
-  padding: 0 20px 0;
+.feedback__form {
+  padding: 24px 20px 39px;
   display: flex;
   flex-direction: column;
 }
