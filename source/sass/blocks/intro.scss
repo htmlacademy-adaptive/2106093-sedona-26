@@ -7,6 +7,17 @@
   padding: 51px 20px 65px;
 }
 
+.intro::after {
+  content: "";
+  background-image: url("../../img/intro/index-intro/intro-mask.svg");
+  width: 320px;
+  height: 58px;
+  position: absolute;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, 15%);
+}
+
 .intro__intro-image {
   margin: 0 auto;
 }
