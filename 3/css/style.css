@@ -141,7 +141,7 @@
 }
 
 .nav-list__item:last-child {
-  background: linear-gradient 180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .index-intro {
@@ -153,21 +153,19 @@
   padding: 90px 20px 85px;
 }
 
+.index-intro::after {
+  content: "";
+  background-image: url("../../img/intro/index-intro/intro-mask.svg");
+  width: 320px;
+  height: 58px;
+  position: absolute;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
 .index-intro__image {
   margin: 0 auto;
-}
-
-.about-sedona__heading {
-  padding: 35px 20px 25px;
-}
-
-.media__heading {
-  padding: 37px 20px 25px;
-}
-
-.feedback__heading {
-  padding: 37px 20px 25px;
-  border-bottom: solid 1px #e5e5e5;
 }
 
 .heading__title {
@@ -216,28 +214,25 @@
   flex-direction: row;
 }
 
-.advantages-list__text-wrapper {
-  padding-bottom: 10px;
-}
-
 .advantages-list__text-wrapper--light {
   color: #ffffff;
   background-color: #81b3d2;
-  padding: 33px 19px 0;
+  padding: 40px 16px 10px;
 }
 
-.advantages-list__item--back-dark {
+.advantages-list__text-wrapper--dark {
   background-color: #eeeeee;
-  padding: 33px 19px 0;
-}
-
-.advantages-list__text-wrapper--border {
-  border-bottom: solid 1px #d6d6d6;
+  padding: 26px 26px 0;
 }
 
 .advantages-list__text {
   font-size: 15px;
-  margin: 0 0 15px;
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+.advantages-list__text--border {
+  border-bottom: solid 1px #d6d6d6;
 }
 
 .advantages-city-list {
@@ -341,18 +336,32 @@
   padding: 51px 20px 65px;
 }
 
+.intro::after {
+  content: "";
+  background-image: url("../../img/intro/index-intro/intro-mask.svg");
+  width: 320px;
+  height: 58px;
+  position: absolute;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, 15%);
+}
+
 .intro__intro-image {
   margin: 0 auto;
 }
 
+.card {
+  padding: 24px 20px 0;
+}
+
 .card__photo {
-  margin: 0 auto;
+  margin: 0 auto 15px;
 }
 
 .card__author-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
   border-bottom: solid 1px #e5e5e5;
 }
 
@@ -360,7 +369,6 @@
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding: 15px 20px 5px;
 }
 
 .card__title {
@@ -369,7 +377,7 @@
 
 .card__likes-container {
   text-align: start;
-  padding: 0 20px 25px;
+  padding: 0 0 25px;
 }
 
 .card__author-name {
@@ -407,21 +415,13 @@
   padding: 0 20px;
 }
 
-.name-form,
-.contacts-form,
-.radio-form,
-.checkbox-form,
-.comment-form {
-  border: none;
-  padding: 24px 0 29px;
+.feedback__heading {
+  padding: 37px 20px 25px;
+  border-bottom: solid 1px #e5e5e5;
 }
 
-.feedback__name-form,
-.feedback__contacts-form,
-.feedback__radio-form,
-.feedback__checkbox-form {
-  margin-top: 24px;
-  padding: 0 20px 0;
+.feedback__form {
+  padding: 24px 20px 39px;
   display: flex;
   flex-direction: column;
 }
@@ -430,21 +430,27 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding-bottom: 20px;
-}
-
-.name-form__title {
-  margin-bottom: 20px;
 }
 
 .input {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 700;
   background-color: #f2f2f2;
   border: none;
   padding: 16px 40px 16px 16px;
+}
+
+.input--comment {
+  min-height: 150px;
+  padding-right: 16px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.form:not(:nth-last-child(-n+2)) {
+  border-bottom: solid 1px #e5e5e5;
 }
 
 .form__label {
@@ -452,15 +458,39 @@
   padding-left: 16px;
 }
 
-.form__name,
-.form__surname,
-.form__email,
-.form__phone {
+.form__input:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.form__button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
 }
 
 .form__button {
   margin: 0 auto;
+  min-width: 281px;
+}
+
+.form__title {
+  margin: 0 0 20px;
+}
+
+.form__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item {
+  text-align: start;
+}
+
+.form__attantion {
+  margin-left: auto;
 }
 
 .attantion {
@@ -468,8 +498,44 @@
   font-size: 12px;
 }
 
+.modal {
+  position: relative;
+  margin: auto;
+  background-color: #ffffff;
+}
+
 .modal__button {
   margin: 0 auto;
+  min-width: 180px;
+}
+
+.modal__heading-error {
+  padding: 45px 42px 28px;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.modal__button-wrapper-error {
+  padding-bottom: 35px;
+}
+
+.modal__heading-sent {
+  padding: 39px 38px 30px;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.modal__button-wrapper-sent {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.modal__title {
+  margin: 0 0 30px;
+}
+
+.modal__subtitle {
+  margin: 0;
 }
 
 .control-label {
@@ -478,27 +544,41 @@
   font-weight: 700;
 }
 
-.radio-form__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.about-sedona__heading {
+  padding: 35px 20px 25px;
+}
+
+.about-sedona__heading::after {
+  content: "";
+  background-image: url("../../img/about-sedona/mask.svg");
+  width: 320px;
+  height: 37px;
+  position: absolute;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.media__heading {
+  padding: 37px 20px 25px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
 }
 
-.radio-form__item {
-  text-align: start;
+.modal-container--error-close {
+  display: none;
 }
 
-.checkbox-form__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.checkbox-form__item {
-  text-align: start;
+.modal-container--sent-close {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
