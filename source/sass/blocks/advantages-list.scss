@@ -31,28 +31,24 @@
   flex-direction: row;
 }
 
-.advantages-list__text-wrapper {
-
-}
-
 .advantages-list__text-wrapper--light {
   color: #ffffff;
   background-color: #81b3d2;
-  padding: 40px 16px 34px;
+  padding: 40px 16px 10px;
 }
 
 
 .advantages-list__text-wrapper--dark {
   background-color: #eeeeee;
-  padding: 26px 26px 0;
+  padding: 26px 26px 0px;
 }
 
 .advantages-list__text {
   font-size: 15px;
   margin: 0;
+  padding-bottom: 24px;
 }
 
 .advantages-list__text--border {
   border-bottom: solid 1px rgba(214, 214, 214, 1);
-  padding-bottom: 24px;
 }
