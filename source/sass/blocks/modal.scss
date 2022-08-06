@@ -1,3 +1,9 @@
+.modal {
+  position: relative;
+  margin: auto;
+  background-color: #ffffff;
+}
+
 .modal__button {
   margin: 0 auto;
   min-width: 180px;
@@ -5,6 +11,8 @@
 
 .modal__heading-error {
   padding: 45px 42px 28px;
+  max-width: 320px;
+  box-sizing: border-box;
 }
 
 .modal__button-wrapper-error {
@@ -13,6 +21,8 @@
 
 .modal__heading-sent {
   padding: 39px 38px 30px;
+  max-width: 320px;
+  box-sizing: border-box;
 }
 
 .modal__button-wrapper-sent {

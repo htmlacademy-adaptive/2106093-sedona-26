@@ -11,6 +11,12 @@
   margin-bottom: 16px;
 }
 
+.form__button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
 .form__button {
   margin: 0 auto;
   min-width: 281px;
@@ -30,4 +36,8 @@
 
 .form__item {
   text-align: start;
+}
+
+.form__attantion {
+  margin-left: auto;
 }
