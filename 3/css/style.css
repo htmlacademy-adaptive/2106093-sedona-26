@@ -146,7 +146,7 @@
 
 .index-intro {
   background-color: #a4c9dd;
-  background-image: url("../../img/intro/index-intro/back-mobile.jpg");
+  background-image: url("../img/intro/index-intro/back-mobile.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
@@ -155,7 +155,7 @@
 
 .index-intro::after {
   content: "";
-  background-image: url("../../img/intro/index-intro/intro-mask.svg");
+  background-image: url("../img/intro/index-intro/intro-mask.svg");
   width: 320px;
   height: 58px;
   position: absolute;
@@ -329,7 +329,7 @@
 
 .intro {
   background-color: #a4c9dd;
-  background-image: url("../../img/intro/intro/back-intro.jpg");
+  background-image: url("../img/intro/intro/back-intro.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
@@ -338,7 +338,7 @@
 
 .intro::after {
   content: "";
-  background-image: url("../../img/intro/index-intro/intro-mask.svg");
+  background-image: url("../img/intro/index-intro/intro-mask.svg");
   width: 320px;
   height: 58px;
   position: absolute;
@@ -439,12 +439,11 @@
   font-weight: 700;
   background-color: #f2f2f2;
   border: none;
-  padding: 16px 40px 16px 16px;
+  padding: 16px 16px 16px 16px;
 }
 
 .input--comment {
   min-height: 150px;
-  padding-right: 16px;
   resize: none;
   box-sizing: border-box;
 }
