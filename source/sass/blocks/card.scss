@@ -1,0 +1,46 @@
+.card {
+  padding: 24px 20px 25px;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.card__photo {
+  margin: 0 auto 15px;
+}
+
+.card__author-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__author {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__likes-container {
+  text-align: start;
+}
+
+.card__author-name {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.card__text {
+  text-transform: none;
+}
+
+.card__like-icon {
+  opacity: 0.3;
+}
+
+.card__like-quantity {
+  color: #000000;
+  font-weight: 700;
+}

@@ -1,0 +1,14 @@
+.about-sedona__heading {
+  padding: 35px 20px 25px;
+}
+
+.about-sedona__heading::after {
+  content: "";
+  background-image: url("../../img/about-sedona/mask.svg");
+  width: 320px;
+  height: 37px;
+  position: absolute;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}

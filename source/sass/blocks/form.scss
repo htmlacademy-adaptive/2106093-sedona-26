@@ -1,0 +1,43 @@
+.form:not(:nth-last-child(-n+2)) {
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.form__label {
+  margin-right: auto;
+  padding-left: 16px;
+}
+
+.form__input:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.form__button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.form__button {
+  margin: 0 auto;
+  min-width: 281px;
+}
+
+.form__title {
+  margin: 0 0 20px;
+}
+
+.form__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item {
+  text-align: start;
+}
+
+.form__attantion {
+  margin-left: auto;
+}

@@ -1,0 +1,23 @@
+.index-intro {
+  background-color: #a4c9dd;
+  background-image: url("../img/intro/index-intro/back-mobile.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 90px 20px 85px;
+}
+
+.index-intro::after {
+  content: "";
+  background-image: url("../img/intro/index-intro/intro-mask.svg");
+  width: 320px;
+  height: 58px;
+  position: absolute;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.index-intro__image {
+  margin: 0 auto;
+}

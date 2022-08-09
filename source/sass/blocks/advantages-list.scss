@@ -1,0 +1,50 @@
+.advantages-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-sedona__advantages-list {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.advantages-list__title {
+  margin: 0 0 11px;
+  font-size: 18px;
+  color: currentColor;
+}
+
+.advantages-list__numiration {
+  display: block;
+  margin: 0 0 11px;
+}
+
+.advantages-list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.advantages-list__text-wrapper--light {
+  color: #ffffff;
+  background-color: #81b3d2;
+  padding: 40px 16px 10px;
+}
+
+
+.advantages-list__text-wrapper--dark {
+  background-color: #eeeeee;
+  padding: 26px 26px 0;
+}
+
+.advantages-list__text {
+  font-size: 15px;
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+.advantages-list__text--border {
+  border-bottom: solid 1px rgba(214, 214, 214, 1);
+}
