@@ -8,6 +8,10 @@
   padding: 16px 16px 16px 16px;
 }
 
+.input::placeholder {
+  opacity: 0.3;
+}
+
 .input--comment {
   min-height: 150px;
   resize: none;
