@@ -4,11 +4,15 @@
 
 .about-sedona__heading::after {
   content: "";
-  background-image: url("../../img/about-sedona/mask.svg");
-  max-width: 100%;
+  background-image: url("../img/about-sedona/mask.svg");
+  width: $mobile-width;
   height: 37px;
   position: absolute;
   bottom: auto;
   left: 50%;
   transform: translate(-50%, 50%);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
