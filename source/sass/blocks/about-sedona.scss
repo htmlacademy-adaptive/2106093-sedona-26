@@ -5,7 +5,7 @@
 .about-sedona__heading::after {
   content: "";
   background-image: url("../../img/about-sedona/mask.svg");
-  width: 320px;
+  max-width: $mobile-width;
   height: 37px;
   position: absolute;
   bottom: auto;

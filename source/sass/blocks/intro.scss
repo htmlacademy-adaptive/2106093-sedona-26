@@ -10,7 +10,7 @@
 .intro::after {
   content: "";
   background-image: url("../img/intro/index-intro/intro-mask.svg");
-  width: 320px;
+  max-width: $mobile-width;
   height: 58px;
   position: absolute;
   bottom: auto;

@@ -12,7 +12,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  width: 320px;
+  max-width: $mobile-width;
   min-height: 100%;
   text-transform: uppercase;
   text-align: center;
