@@ -17,4 +17,8 @@
   text-transform: uppercase;
   text-align: center;
   color: #333333;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
 }

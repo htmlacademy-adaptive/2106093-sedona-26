@@ -10,14 +10,20 @@
 .index-intro::after {
   content: "";
   background-image: url("../img/intro/index-intro/intro-mask.svg");
-  max-width: $mobile-width;
+  width: $mobile-width;
   height: 58px;
   position: absolute;
   bottom: auto;
   left: 50%;
   transform: translate(-50%, 50%);
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    background-image: url("../img/intro/index-intro/intro-mask-tablet.svg");
+    width: $tablet-width;
+  }
 }
 
-.index-intro__image {
+.index-intro__intro-image {
   margin: 0 auto;
 }
