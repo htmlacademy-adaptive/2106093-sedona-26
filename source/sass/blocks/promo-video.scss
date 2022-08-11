@@ -1,9 +1,11 @@
 .promo-video {
   text-align: center;
   padding: 17px 20px 0;
+
   @media (min-width: $tablet-width) {
     padding: 58px 60px 0;
   }
+
   @media (min-width: $tablet-width) {
     padding: 58px 200px 0;
   }

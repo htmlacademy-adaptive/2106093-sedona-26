@@ -22,6 +22,7 @@
   position: absolute;
   right: 0;
   top: 0;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -36,6 +37,7 @@
   position: absolute;
   top: 0;
   right: 0;
+
   @media (min-width: $tablet-width) {
     display: none;
   }

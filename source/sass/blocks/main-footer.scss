@@ -1,11 +1,13 @@
 .main-footer__container {
   padding: 38px 0 0;
+
   @media (min-width: $tablet-width) {
     display: flex;
     padding: 36px 60px;
     justify-content: space-between;
     align-items: center;
   }
+
   @media (min-width: $tablet-width) {
     padding: 36px 100px;
   }

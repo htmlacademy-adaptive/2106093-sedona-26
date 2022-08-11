@@ -13,6 +13,7 @@
 
 .nav-list--active {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -33,6 +34,7 @@
   font-size: 18px;
   line-height: 26px;
   position: relative;
+
   @media (min-width: $tablet-width) {
     width: 153px;
     color: #000000;
@@ -40,6 +42,7 @@
     font-size: 14px;
     line-height: 21px;
   }
+
   @media (min-width: $desktop-width) {
     width: 240px;
   }
@@ -49,6 +52,7 @@
   .nav-list__item--active {
     color: #766357;
   }
+
   .nav-list__item:nth-child(4n+3) {
     margin-left: 153px;
   }
@@ -69,6 +73,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
