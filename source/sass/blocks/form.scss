@@ -10,6 +10,9 @@
   @media (min-width: $tablet-width) {
     width: 280px;
   }
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .form__label {
@@ -51,6 +54,11 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 

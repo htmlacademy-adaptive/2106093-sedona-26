@@ -6,6 +6,9 @@
     justify-content: space-between;
     align-items: center;
   }
+  @media (min-width: $tablet-width) {
+    padding: 36px 100px;
+  }
 }
 
 .main-footer__authors {

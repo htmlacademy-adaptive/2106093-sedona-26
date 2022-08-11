@@ -21,6 +21,11 @@
     width: $tablet-width;
     max-width: $tablet-width;
   }
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/intro/intro/mask-desktop.svg");
+    width: $desktop-width;
+    max-width: $desktop-width;
+  }
 }
 
 .intro__intro-image {

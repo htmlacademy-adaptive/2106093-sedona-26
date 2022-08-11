@@ -40,14 +40,23 @@
     font-size: 14px;
     line-height: 21px;
   }
+  @media (min-width: $desktop-width) {
+    width: 240px;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .nav-list__item--active {
+    color: #766357;
+  }
   .nav-list__item:nth-child(4n+3) {
     margin-left: 153px;
   }
-  .nav-list__item--active {
-    color: #766357;
+}
+
+@media (min-width: $desktop-width) {
+  .nav-list__item:nth-child(4n+3) {
+    margin-left: 240px;
   }
 }
 
