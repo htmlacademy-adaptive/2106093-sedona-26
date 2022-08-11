@@ -1,5 +1,9 @@
 .promo-video {
+  text-align: center;
   padding: 17px 20px 0;
+  @media (min-width: $tablet-width) {
+    padding: 58px 60px 0;
+  }
 }
 
 .promo-video__title {
@@ -9,7 +13,16 @@
   color: #000000;
 }
 
+.promo-video__text-wrapper {
+  max-width: 445px;
+  margin: 0 auto 80px;
+}
+
 .promo-video__text {
   margin: 0 0 20px;
   padding: 0 20px;
+}
+
+.promo-video__video-player {
+  margin: 0 auto;
 }
