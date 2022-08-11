@@ -4,30 +4,53 @@
   background-color: #ffffff;
 }
 
+.modal--error {
+  box-sizing: border-box;
+  padding: 45px 41px 35px;
+  max-width: $mobile-width;
+  @media (min-width: $tablet-width) {
+    padding: 50px 64px;
+    max-width: 400px;
+  }
+}
+
 .modal__button {
   margin: 0 auto;
   min-width: 180px;
+  @media (min-width: $tablet-width) {
+    min-width: 240px;
+  }
 }
 
 .modal__heading-error {
-  padding: 45px 42px 28px;
-  max-width: 320px;
+  padding: 0 0 28px;
+  max-width: $mobile-width;
   box-sizing: border-box;
+  @media (min-width: $tablet-width) {
+    max-width: 400px;
+  }
 }
 
 .modal__button-wrapper-error {
-  padding-bottom: 35px;
+  // padding-bottom: 35px;
 }
 
 .modal__heading-sent {
   padding: 39px 38px 30px;
-  max-width: 320px;
+  max-width: $mobile-width;
   box-sizing: border-box;
+  @media (min-width: $tablet-width) {
+    max-width: 640px;
+    padding: 53px 98px 55px;
+  }
 }
 
 .modal__button-wrapper-sent {
   padding: 20px;
   background-color: #f2f2f2;
+  @media (min-width: $tablet-width) {
+    padding: 44px 91px;
+  }
 }
 
 .modal__title {
