@@ -22,6 +22,12 @@
     background-image: url("../img/intro/index-intro/intro-mask-tablet.svg");
     width: $tablet-width;
   }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    background-image: url("../img/intro/intro/mask-desktop.svg");
+    width: $desktop-width;
+  }
 }
 
 .index-intro__intro-image {
