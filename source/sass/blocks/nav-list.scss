@@ -14,12 +14,21 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
 }
 
-.nav-list--active {
+.list-nav--nojs {
+  display: block;
+}
+
+.list-nav--open {
+  display: block;
+}
+
+.nav-list--close {
   display: none;
 
   @media (min-width: $tablet-width) {
