@@ -17,11 +17,8 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    background-color: transparent;
   }
-}
-
-.list-nav--nojs {
-  display: block;
 }
 
 .list-nav--open {
@@ -33,8 +30,6 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap;
-    background-color: transparent;
   }
 }
 
