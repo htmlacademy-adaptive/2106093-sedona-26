@@ -41,6 +41,18 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .card:nth-child(2n+4) .card__author-container {
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card:nth-child(2n+4) .card__author-container {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .card__author {
   display: flex;
   flex-direction: column;
