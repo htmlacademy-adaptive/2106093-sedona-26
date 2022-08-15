@@ -1,10 +1,39 @@
+.feedback {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 100px 28px;
+  }
+}
+
+.feedback__general-form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .feedback__heading {
   padding: 37px 20px 25px;
   border-bottom: solid 1px #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    max-width: 435px;
+    padding: 64px 0 78px;
+    margin: 0 auto;
+    border-bottom: none;
+  }
 }
 
 .feedback__form {
   padding: 24px 20px 39px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

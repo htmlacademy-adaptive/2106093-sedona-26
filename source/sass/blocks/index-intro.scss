@@ -10,14 +10,26 @@
 .index-intro::after {
   content: "";
   background-image: url("../img/intro/index-intro/intro-mask.svg");
-  width: 320px;
+  width: $mobile-width;
   height: 58px;
   position: absolute;
   bottom: auto;
   left: 50%;
   transform: translate(-50%, 50%);
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    background-image: url("../img/intro/index-intro/intro-mask-tablet.svg");
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    background-image: url("../img/intro/intro/mask-desktop.svg");
+    width: $desktop-width;
+  }
 }
 
-.index-intro__image {
+.index-intro__intro-image {
   margin: 0 auto;
 }
