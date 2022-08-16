@@ -3,7 +3,6 @@
   padding: 0;
   list-style: none;
   align-items: center;
-  background-color: #81b3d2;
   z-index: 2;
   position: absolute;
   top: 0;
@@ -37,9 +36,8 @@
   font-weight: 700;
   height: 55px;
   text-align: center;
-  padding: 17px 10px 12px;
-  box-sizing: border-box;
   color: #ffffff;
+  background-color: #81b3d2;
   box-shadow:
     0 -1px 0 rgba(1, 1, 1, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -48,12 +46,28 @@
   position: relative;
   width: 100%;
 
+  @media (min-width: $mobile-width) {
+    &:hover,
+    &:focus,
+    &:focus-within {
+      background-color: #669ec0;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 20%;
     color: #000000;
     box-shadow: none;
     font-size: 14px;
     line-height: 21px;
+    background-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+      background-color: transparent;
+      color: rgba(129, 179, 210, 1);
+    }
   }
 }
 
@@ -79,5 +93,41 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.nav-list__link {
+  padding: 17px 10px 12px;
+  box-sizing: border-box;
+  display: block;
+
+  @media (min-width: $mobile-width) {
+    &:hover,
+    &:focus,
+    &:focus-within {
+      background-color: #669ec0;
+      outline: 0;
+      outline-offset: 0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+      background-color: transparent;
+      color: rgba(129, 179, 210, 1);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 }
