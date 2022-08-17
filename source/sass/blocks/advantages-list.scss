@@ -90,6 +90,10 @@
   @media (min-width: $tablet-width) {
     padding: 40px 26px 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 52px 56px;
+  }
 }
 
 
@@ -99,6 +103,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 42px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 54px 62px;
   }
 }
 

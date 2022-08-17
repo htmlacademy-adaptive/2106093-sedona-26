@@ -6,6 +6,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
   }
 }
 
@@ -19,7 +21,13 @@
     grid-template-columns: 1fr;
     text-align: center;
     justify-items: center;
-    padding: 60px 36px;
+    padding: 60px 22px;
+    width: 33.33%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 56px 79px;
   }
 }
 
@@ -35,6 +43,16 @@
 
 .advantages-city-list__text {
   margin: 0 0 22px;
+
+  br{
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    br{
+      display: block;
+    }
+  }
 }
 
 .advantages-city-list__text-wrapper {
