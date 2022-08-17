@@ -44,12 +44,12 @@
 .advantages-city-list__text {
   margin: 0 0 22px;
 
-  br{
+  br {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
-    br{
+    br {
       display: block;
     }
   }

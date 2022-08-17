@@ -9,8 +9,21 @@
     max-width: 520px;
     font-size: 21px;
   }
+
+
+
 }
 
 .heading__subtitle {
   margin: 0;
+
+  br {
+    display:none;
+  }
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: block;
+    }
+  }
 }
