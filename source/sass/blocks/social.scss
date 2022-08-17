@@ -8,12 +8,34 @@
 }
 
 .social__item {
-  background-color: #81b3d2;
-  padding: 17px 12px 8px;
+  // background-color: #81b3d2;
+  // padding: 17px 12px 8px;
   margin: 3px 3px;
   box-sizing: border-box;
+
+}
+
+.social__icon {
+  display: block;
 }
 
 .social__link {
   color: #ffffff;
+  background-color: #81b3d2;
+  padding: 12px;
+  box-sizing: border-box;
+  display: block;
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    background-color: rgba(102, 158, 192, 1);
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  &:active,
+  &:active .social__link {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
