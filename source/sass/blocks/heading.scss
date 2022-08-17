@@ -4,6 +4,11 @@
   margin: 0 auto 16px;
   color: #000000;
   max-width: 270px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+    font-size: 21px;
+  }
 }
 
 .heading__subtitle {
