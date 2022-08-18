@@ -20,6 +20,8 @@
 .form__label {
   margin-right: auto;
   padding-left: 16px;
+  display: flex;
+  align-items: center;
 }
 
 .form__input:not(:last-child) {
@@ -55,6 +57,9 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
 
   @media (min-width: $tablet-width) {
     display: grid;
