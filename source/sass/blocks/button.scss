@@ -18,7 +18,11 @@
   }
 
   &:active {
-    background: rgba(84, 150, 189, 1);
+    background-color: rgba(84, 150, 189, 1);
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: rgba(229, 229, 229, 1);
   }
 }
