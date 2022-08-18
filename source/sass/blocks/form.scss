@@ -33,10 +33,50 @@
 }
 
 .form__label {
-  margin-right: auto;
-  padding-left: 16px;
+  position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form__label--row {
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+}
+
+.form__label--phone::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-image: url(../img/form/phone-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.form__label--mail::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-image: url(../img/form/mail-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.form__label-title {
+  align-self: flex-start;
+  margin-left: 16px;
 }
 
 .form__input:not(:last-child) {
@@ -73,7 +113,7 @@
   margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 28px;
+    margin: 0 0 12px;
   }
 }
 

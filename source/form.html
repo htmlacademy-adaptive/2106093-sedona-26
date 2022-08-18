@@ -59,21 +59,31 @@
           <!-- ФИО -->
           <div class="feedback__form form">
             <h3 class="form__title title">Представьтесь:</h3>
-              <label class="form__label" for="name">Имя*:</label>
+            <label class="form__label" for="name">
+              <span class="form__label-title">Имя*:</span>
               <input class="form__input input" name="name" id="name" type="text" value="Пётр" placeholder="Укажите имя" required>
-              <label class="form__label" for="surname">Фамилия*:</label>
+            </label>
+            <label class="form__label" for="surname">
+              <span class="form__label-title">Фамилия*:</span>
               <input class="form__input input" name="surname" id="surname" type="text" value="Пустота" placeholder="Укажите фамилию" required>
-              <label class="form__label" for="patronymic">Отчество:</label>
+            </label>
+            <label class="form__label" for="patronymic">
+              <span class="form__label-title">Отчество:</span>
               <input class="form__input input" name="patronymic" id="patronymic" type="text" value="Викторович" placeholder="Укажите отчество">
-          </div>
+            </label>
+            </div>
 
           <!-- Контакты -->
           <div class="feedback__form form">
             <h3 class="form__title title form__title--margin">Контактная информация:</h3>
-              <label class="form__label" for="phone">Контактный телефон*:</label>
-              <input class="form__input input" name="phone" id="phone" type="tel" placeholder="Введите телефон" required>
-              <label class="form__label" for="user_email">Электронная почта*:</label>
+            <label class="form__label form__label--phone" for="phone">
+              <span class="form__label-title">Контактный телефон*:</span>
+              <input class="form__input input input--phone" name="phone" id="phone" type="tel" placeholder="Введите телефон" required>
+            </label>
+            <label class="form__label form__label--mail" for="user_email">
+              <span class="form__label-title">Электронная почта*:</span>
               <input class="form__input input" type="email" name="user-email" id="user_email" placeholder="Введите email" required>
+            </label>
           </div>
 
           <!-- Впечатления -->
@@ -81,21 +91,21 @@
             <h3 class="form__title form__title--border title">Ваше общее впечатление:</h3>
             <ul class="form__list form__list--row">
               <li class="form__item">
-                <label class="form__label" for="positive_feedback">
+                <label class="form__label form__label--row" for="positive_feedback">
                   <input class="form__radio radio" type="radio" name="feedback" id="positive_feedback" checked>
                   <span class="radio__fake"></span>
                   <span class="control-label">Скорее положительное</span>
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="negative_feedback">
+                <label class="form__label form__label--row" for="negative_feedback">
                   <input class="form__radio radio" type="radio" name="feedback" id="negative_feedback">
                   <span class="radio__fake"></span>
                   <span class="control-label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="neutral_feedback">
+                <label class="form__label form__label--row" for="neutral_feedback">
                   <input class="form__radio radio" type="radio" name="feedback" id="neutral_feedback">
                   <span class="radio__fake"></span>
                   <span class="control-label">Затрудняюсь ответить</span>
@@ -109,28 +119,28 @@
             <h3 class="form__title form__title--border title">Посещенные<br> достопримечательности:</h3>
             <ul class="form__list form__list--row">
               <li class="form__item">
-                <label class="form__label" for="diablo_bridge">
+                <label class="form__label form__label--row" for="diablo_bridge">
                   <input class="form__checkbox checkbox" type="checkbox" name="feedback" id="diablo_bridge" checked>
                   <span class="checkbox__fake"></span>
                   <span class="control-label">Мост дьявола</span>
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="mountain">
+                <label class="form__label form__label--row" for="mountain">
                   <input class="form__checkbox checkbox" type="checkbox" name="feedback" id="mountain" checked>
                   <span class="checkbox__fake"></span>
                   <span class="control-label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="slide_park">
+                <label class="form__label form__label--row" for="slide_park">
                   <input class="form__checkbox checkbox" type="checkbox" name="feedback" id="slide_park">
                   <span class="checkbox__fake"></span>
                   <span class="control-label">Слайд-парк</span>
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="red_rocks">
+                <label class="form__label form__label--row" for="red_rocks">
                   <input class="form__checkbox checkbox" type="checkbox" name="feedback" id="red_rocks">
                   <span class="checkbox__fake"></span>
                   <span class="control-label">Красные скалы</span>
