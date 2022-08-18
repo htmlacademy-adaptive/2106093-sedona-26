@@ -11,7 +11,7 @@
 
 .index-intro::after {
   content: "";
-  background-image: url(../img/intro/mask.svg);
+  background-image: url("../img/intro/mask.svg");
   height: 57px;
   min-width: 100%;
   position: absolute;

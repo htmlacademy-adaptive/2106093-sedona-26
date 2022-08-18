@@ -2,7 +2,7 @@
   appearance: none;
 
   &:checked ~ .checkbox__fake::before {
-    background-image: url(../img/form/tick.svg);
+    background-image: url("../img/form/tick.svg");
   }
 }
 

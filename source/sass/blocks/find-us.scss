@@ -25,12 +25,12 @@
 .find-us__text {
   margin: 0 0 32px;
 
-  br{
+  br {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
-    br{
+    br {
       display: block;
     }
   }
