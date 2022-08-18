@@ -17,6 +17,21 @@
   }
 }
 
+.form:nth-child(1)::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 1px;
+    height: 90%;
+    background-color: #dbdbdb;
+    position: absolute;
+    right: -7%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -15%;
+  }
+}
+
 .form__label {
   margin-right: auto;
   padding-left: 16px;
@@ -38,6 +53,10 @@
     width: 100%;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 117px;
+  }
 }
 
 .form__button {
@@ -46,11 +65,57 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    min-width: 324px;
   }
 }
 
 .form__title {
   margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 28px;
+  }
+}
+
+.form__title--border {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 0 150px;
+  }
+}
+
+.form__title--border::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 19%;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  @media (min-width: $desktop-width) {
+    width: 30%;
+  }
+}
+
+.form__title--border::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 20%;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+    @media (min-width: $desktop-width) {
+      width: 30%;
+  }
+}
+
+.form__title--margin {
+  margin-left: -24px;
 }
 
 .form__list {
@@ -68,6 +133,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }

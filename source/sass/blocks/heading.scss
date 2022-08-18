@@ -9,9 +9,13 @@
     max-width: 520px;
     font-size: 21px;
   }
+}
 
-
-
+.heading__title--s30 {
+  @media (min-width: $tablet-width) {
+    max-width: 435px;
+    font-size: 30px;
+  }
 }
 
 .heading__subtitle {
