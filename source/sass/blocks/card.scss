@@ -26,6 +26,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 22px 20px 15px;
     background-color: #f2f2f2;
   }
@@ -41,10 +42,23 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .card:nth-child(2n+4) .card__author-container {
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card:nth-child(2n+4) .card__author-container {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .card__author {
   display: flex;
   flex-direction: column;
   text-align: start;
+  margin-bottom: 11px;
 }
 
 .card__title {
@@ -53,6 +67,9 @@
 
 .card__likes-container {
   text-align: start;
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
 }
 
 .card__author-name {

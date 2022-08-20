@@ -32,8 +32,16 @@
   padding: 24px 20px 39px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  row-gap: 16px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+}
+
+.feedback__form--row {
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
   }
 }

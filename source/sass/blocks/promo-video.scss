@@ -6,7 +6,7 @@
     padding: 58px 60px 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 58px 200px 0;
   }
 }
@@ -16,11 +16,19 @@
   line-height: 26px;
   margin: 0 0 30px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .promo-video__text-wrapper {
-  max-width: 445px;
-  margin: 0 auto 80px;
+  max-width: 485px;
+  margin: 0 auto 38px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 80px;
+  }
 }
 
 .promo-video__text {

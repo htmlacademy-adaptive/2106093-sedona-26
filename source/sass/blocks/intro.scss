@@ -5,29 +5,20 @@
   background-repeat: no-repeat;
   text-align: center;
   padding: 51px 20px 65px;
+  position: relative;
+  overflow: hidden;
 }
 
 .intro::after {
   content: "";
-  background-image: url("../img/intro/index-intro/intro-mask.svg");
-  max-width: $mobile-width;
-  height: 58px;
+  background-image: url("../img/intro/mask.svg");
+  height: 57px;
+  min-width: 100%;
   position: absolute;
-  bottom: auto;
-  left: 50%;
-  transform: translate(-50%, 15%);
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/intro/index-intro/intro-mask-tablet.svg");
-    width: $tablet-width;
-    max-width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/intro/intro/mask-desktop.svg");
-    width: $desktop-width;
-    max-width: $desktop-width;
-  }
+  bottom: 0;
+  transform: translateX(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .intro__intro-image {
