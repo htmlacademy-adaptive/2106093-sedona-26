@@ -55,6 +55,14 @@
   }
 }
 
+.advantages-city-list__svg {
+  color: #81B3D2;
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+  }
+}
+
 .advantages-city-list__text-wrapper {
   padding-top: 8px;
 }
