@@ -32,17 +32,16 @@
   font-size: 18px;
   color: currentColor;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
+  }
+}
 
-    br {
-      display: block;
-    }
+.advantages-list__title--width {
+  @media (min-width: $tablet-width) {
+    max-width: 159px;
+    margin: 0 auto 11px;
   }
 }
 
