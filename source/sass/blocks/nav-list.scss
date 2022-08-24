@@ -32,6 +32,14 @@
   }
 }
 
+.nav-list--nojs {
+  display: block;
+
+  & .main-nav__toggle-close {
+    display: none;
+  }
+}
+
 .nav-list__item {
   font-weight: 700;
   height: 55px;
