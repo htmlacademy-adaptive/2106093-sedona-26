@@ -51,6 +51,12 @@
   flex-wrap: wrap;
 }
 
+.advantages-list__item--row {
+  @media (min-width: $tablet-width) {
+    width: 33.33%;
+  }
+}
+
 .advantages-list__numiration {
   display: block;
   margin: 0 0 11px;
@@ -67,14 +73,6 @@
 
 .advantages-list__text-wrapper {
   box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    width: 256px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 400px;
-  }
 }
 
 .advantages-list__image-wrapper {
@@ -90,6 +88,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 40px 26px 24px;
+    width: 33.33%;
   }
 
   @media (min-width: $desktop-width) {
