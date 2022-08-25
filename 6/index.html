@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-apple-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <base href="https://htmlacademy-adaptive.github.io/2106093-sedona-26/6/">
+</head>
+  <body class="page__body">
+
+    <!-- Header -->
+    <header class="main-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle-open" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="menu-icon-open" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 0H0v4h23V0ZM23 9H0v4h23V9ZM23 18H0v4h23v-4Z" fill="#81B3D2"/></svg>
+        </button>
+        <a class="main-nav__logo" href="#">
+          <img class="image" src="img/main-header/logo.svg" width="185" height="96" alt="Логотип города Седона.">
+        </a>
+        <ul class="main-nav__list nav-list nav-list--close nav-list--nojs">
+          <li class="nav-list__item  nav-list__item--active">
+            <a class="nav-list__link link" href="index.html">Главная</a>
+            <button class="main-nav__toggle-close" type="button">
+              <svg width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m22 3-3-3-8 8-8-8-3 3 8 8-8 8 3 3 8-8 8 8 3-3-8-8 8-8Z" fill="#fff"/></svg>
+            </button>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="media.html">Фото и видео</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="https://htmlacademy.ru/">HTML Acadamy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main-container">
+
+      <!-- Секция Вступление -->
+      <section class="index-intro">
+        <h1 class="visually-hidden">Седона</h1>
+        <img class="index-intro__intro-image intro-image image" src="img/intro/index-intro/intro-image.svg" alt="welcome to the gorgeous, because the Grand Canyon sucks!" width="282" height="214">
+      </section>
+
+      <!-- Секция Про Седону -->
+      <section class="about-sedona">
+        <div class="about-sedona__heading heading">
+          <h2 class="heading__title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+          <p class="heading__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+        <ul class="about-sedona__advantages-list advantages-list">
+          <li class="advantages-list__item advantages-list__item">
+            <div class="advantages-list__wrapper">
+              <div class="advantages-list__text-wrapper advantages-list__text-wrapper--light">
+                <h3 class="advantages-list__title">Настоящий<br> городок</h3>
+                <span class="advantages-list__numiration">— №1 —</span>
+                <p class="advantages-list__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <div class="advantages-list__image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/about-sedona/photo-city-desktop.jpg, img/about-sedona/photo-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/about-sedona/photo-city-tablet.jpg, img/about-sedona/photo-city-tablet@2x.jpg 2x">
+                  <img class="advantages-list__image image" src="img/about-sedona/photo-city.jpg" srcset="img/about-sedona/photo-city@2x.jpg 2x" width="520" height="260" alt="Фото отеля.">
+                </picture>
+              </div>
+            </div>
+            <ul class="about-sedona__advantages-city-list advantages-city-list">
+              <li class="advantages-city-list__item">
+                <svg class="advantages-city-list__svg" width="39" height="37" viewBox="0 0 39 37" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M15.402 33.22h8.353V21.06h-8.353V33.22Zm6.839-1.476h-5.325v-9.207h5.273v9.207h.052Z" fill="#81B3D2"/><path d="M37.904 20.043 39 18.975l-5.169-5.036V.203h-7.205v6.715L19.474 0 0 19.026l1.096 1.068 4.073-3.968v19.23H3.133v1.474h33.361v-1.475h-2.663v-19.28l4.073 3.968ZM28.14 1.73h4.124v10.733l-4.124-4.018V1.73Zm4.176 33.574H6.735V14.6L19.474 2.137 32.265 14.6v20.704h.052Z"/><path d="M15.558 13.837c0 2.187 1.828 3.968 4.02 3.968 2.245 0 4.073-1.78 4.073-3.968 0-2.188-1.828-3.917-4.073-3.917s-4.02 1.73-4.02 3.917Zm4.02-2.544c1.41 0 2.61 1.12 2.61 2.544 0 1.373-1.148 2.543-2.61 2.543-1.41 0-2.61-1.119-2.61-2.543 0-1.374 1.2-2.544 2.61-2.544ZM10.39 21.061H8.822v1.984h1.566v-1.984ZM13.47 21.061h-1.566v1.984h1.566v-1.984ZM10.39 24.113H8.822v1.984h1.566v-1.984ZM13.47 24.113h-1.566v1.984h1.566v-1.984ZM27.044 21.061h-1.566v1.984h1.566v-1.984ZM30.177 21.061H28.61v1.984h1.566v-1.984ZM27.044 24.113h-1.566v1.984h1.566v-1.984ZM30.177 24.113H28.61v1.984h1.566v-1.984Z"/></svg>
+                <div class="advantages-city-list__text-wrapper">
+                  <h4 class="advantages-city-list__title">Жильё</h4>
+                  <p class="advantages-city-list__text">Рекомендуем пожить в&nbsp;настоящем<br> мотеле, всё как&nbsp;в кино!</p>
+                </div>
+                </li>
+              <li class="advantages-city-list__item">
+                <svg class="advantages-city-list__svg" width="40" height="35" viewBox="0 0 40 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M37.743 23.3H2.257C.997 23.3 0 24.314 0 25.478v1.773c0 1.165.997 2.128 2.257 2.128h.525v.506c0 2.786 2.362 5.015 5.197 5.015h24.042c2.887 0 5.197-2.28 5.197-5.015v-.506h.525c1.207 0 2.257-.963 2.257-2.178v-1.773c0-1.114-.997-2.128-2.257-2.128Zm-2.047 6.585c0 1.925-1.628 3.495-3.622 3.495H7.927c-1.995 0-3.623-1.57-3.623-3.495v-.506h31.392v.506Zm2.73-2.684c0 .354-.316.658-.683.658H2.257c-.367 0-.682-.304-.682-.658v-1.773c0-.304.315-.608.682-.608h35.538c.368 0 .683.304.683.659V27.2h-.053ZM8.504 19.197l2.835 2.026 2.887-2.026 2.887 2.026L20 19.197l2.835 2.026 2.887-2.026 2.887 2.026 2.887-2.026 2.887 2.026 3.307-2.38-.892-1.216-2.415 1.672-2.887-2.026-2.887 2.026-2.887-2.026-2.887 2.026L20 17.273l-2.887 2.026-2.887-2.026-2.887 2.026-2.835-2.026-2.887 2.026-2.415-1.672-.945 1.216 3.36 2.38 2.887-2.026ZM37.218 15.753c0-.304.052-1.317 0-1.52C36.85 6.332 29.29 0 20 0S3.097 6.332 2.73 14.233v1.52h34.488ZM20 1.52c8.399 0 15.328 5.673 15.643 12.713H4.304C4.672 7.193 11.601 1.52 20 1.52Z"/><path d="M20 8.611c.58 0 1.05-.453 1.05-1.013 0-.56-.47-1.013-1.05-1.013-.58 0-1.05.454-1.05 1.013 0 .56.47 1.013 1.05 1.013ZM15.8 6.129c.58 0 1.05-.454 1.05-1.013 0-.56-.47-1.013-1.05-1.013-.58 0-1.05.453-1.05 1.013 0 .56.47 1.013 1.05 1.013ZM24.2 6.129c.58 0 1.05-.454 1.05-1.013 0-.56-.47-1.013-1.05-1.013-.58 0-1.05.453-1.05 1.013 0 .56.47 1.013 1.05 1.013Z"/></svg>
+                <div class="advantages-city-list__text-wrapper">
+                  <h4 class="advantages-city-list__title">Еда</h4>
+                  <p class="advantages-city-list__text">Всегда заказывайте фирменный бургер,<br> вы&nbsp;не&nbsp;разочаруетесь!</p>
+                </div>
+              </li>
+              <li class="advantages-city-list__item">
+                <svg class="advantages-city-list__svg" width="32" height="38" viewBox="0 0 32 38" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M30.578 11.206H18.184c6.908-3.444 7.467-5.622 7.213-6.838-.559-1.975-2.845-3.495-4.978-2.685-2.794 1.064-3.556 5.218-4.317 8.206-.966-3.04-1.88-6.889-4.064-8.864-.61-.557-1.524-1.114-2.895-1.013-2.032.203-4.927 2.684-3.708 5.47 1.117 2.685 4.825 4.407 7.314 5.775H1.422C.61 11.257 0 11.915 0 12.675v5.672c0 .811.66 1.419 1.422 1.419h.153V38h28.952V19.766h.05c.813 0 1.423-.659 1.423-1.418v-5.673c0-.81-.66-1.47-1.422-1.47ZM21.232 2.95c1.066-.152 2.489.658 2.641 1.62.203 1.368-1.676 2.634-2.54 3.192-1.27.86-2.489 1.316-3.657 2.026.407-1.874 1.27-6.534 3.556-6.838ZM9.752 7.914c-1.117-.76-3.25-2.23-3.2-3.9.051-1.824 2.896-3.293 4.42-1.925 1.93 1.671 2.844 5.571 3.555 8.306-1.625-.81-3.15-1.418-4.775-2.481ZM12.75 36.48H3.048V19.765h9.701V36.48Zm0-18.235H1.524v-5.52h11.225v5.52Zm5.08 18.235h-3.607V12.724h3.607V36.48Zm11.174 0h-9.65V19.765h9.701V36.48h-.05Zm1.473-18.235H19.352v-5.52h11.124v5.52Z"/></svg>
+                <div class="advantages-city-list__text-wrapper">
+                  <h4 class="advantages-city-list__title">Сувениры</h4>
+                  <p class="advantages-city-list__text">Не&nbsp;только китайского,<br> но и&nbsp; местного производства!</p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="advantages-list__item">
+            <div class="advantages-list__wrapper advantages-list__wrapper--reverse">
+              <div class="advantages-list__text-wrapper advantages-list__text-wrapper--light">
+                <h3  class="advantages-list__title">Там есть мост дъявола</h3>
+                <span class="advantages-list__numiration">— №2 —</span>
+                <p class="advantages-list__text">Да, по&nbsp;нему можно<br> пройти! Если вы<br> осмелитесь, конечно</p>
+              </div>
+              <div class="advantages-list__image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/about-sedona/photo-canyon-desktop.jpg, img/about-sedona/photo-canyon-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/about-sedona/photo-canyon-tablet.jpg, img/about-sedona/photo-canyon-tablet@2x.jpg 2x">
+                  <img class="advantages-list__image image" src="img/about-sedona/photo-canyon.jpg" srcset="img/about-sedona/photo-canyon@2x.jpg 2x" width="520" height="260" alt="Фото каньона.">
+                </picture>
+            </div>
+          </li>
+          <li class="advantages-list__item advantages-list__item--row">
+            <div class="advantages-list__text-wrapper advantages-list__text-wrapper--dark">
+              <h3  class="advantages-list__title advantages-list__title--width">Небольшая площадь</h3>
+              <span class="advantages-list__numiration">— №3 —</span>
+              <p class="advantages-list__text advantages-list__text--border">Все&nbsp;интересные места находятся очень близко</p>
+            </div>
+          </li>
+          <li class="advantages-list__item advantages-list__item--row">
+            <div class="advantages-list__text-wrapper advantages-list__text-wrapper--dark">
+              <h3  class="advantages-list__title advantages-list__title--width">Красивая дорога</h3>
+              <span class="advantages-list__numiration">— №4 —</span>
+              <p class="advantages-list__text advantages-list__text--border">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
+            </div>
+          </li>
+          <li class="advantages-list__item advantages-list__item--row">
+            <div class="advantages-list__text-wrapper advantages-list__text-wrapper--dark">
+              <h3  class="advantages-list__title advantages-list__title--width">Мало туристов</h3>
+              <span class="advantages-list__numiration">— №5 —</span>
+              <p class="advantages-list__text">Большинство едет в&nbsp;Гранд Каньон и толпится там</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Секция Найти нас -->
+      <section class="find-us">
+        <div class="find-us__wrapper">
+          <h2 class="find-us__title">Заинтересовались?</h2>
+          <p class="find-us__text text">Укажите предполагаемые даты поездки,<br> и&nbsp;мы покажем вам лучшие предложения гостиниц в&nbsp;Седоне &nbsp;</p>
+          <a class="find-us__find-hotel-button button link" href="#">Найти гостиницу</a>
+        </div>
+        <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987784.8539213878!2d-112.40316928234577!3d34.51815699675378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1660991282278!5m2!1sru!2sua"
+        width="320"
+        height="350"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Sedona, Arizona, USA">
+        </iframe>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="main-footer__container">
+        <div class="main-footer__hashtags">
+          <span class="hashtag">#VisitSedona</span>
+        </div>
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.948c.166-.546 0-.948-.795-.948H20.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738V5.948c0-.656-.184-.948-.74-.948H9.151c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885C4.45 5.288 4.198 5 3.527 5H.9c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551C6.315 17.341 9.37 19 12.153 19c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C19.11 18.216 19.403 19 20.405 19h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"/></g><defs><clipPath id="a"><path d="M0 0h24v24H0z"/></clipPath></defs></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m22.44 4.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.558-2.33 2.242c-.258.258-.473.473-.97.473l.347-4.917 8.948-8.086c.39-.346-.084-.54-.604-.192L7.022 13.314 2.26 11.823c-1.036-.323-1.055-1.036.216-1.533l18.628-7.177c.862-.323 1.617.192 1.335 1.51Z"/></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19.181 5H4.813C3.306 5 2 6.3 2 7.8v8.3C2 17.7 3.306 19 4.813 19h14.368c1.608 0 2.814-1.3 2.814-2.8V7.8c.1-1.5-1.206-2.8-2.814-2.8ZM9.033 15.4V8.6l6.833 3.4-6.833 3.4Z"/></svg>
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer__authors authors">
+          <a class="authors__link link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="authors__text">Разработано</span>
+            <span class="visually-hidden">HTML acadamy</span>
+            <svg  xmlns="http://www.w3.org/2000/svg" width="26" height="34" fill="currentColor" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
