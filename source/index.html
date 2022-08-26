@@ -12,12 +12,28 @@
   </head>
   <body class="page__body">
 
+    <!-- Контейнер для срайта -->
+    <svg style="display: none">
+      <!-- Toggle-open -->
+      <symbol width="23" height="23" id="icon-toggle-open">
+        <path d="M23 0H0v4h23V0ZM23 9H0v4h23V9ZM23 18H0v4h23v-4Z"/>
+      </symbol>
+
+      <!-- Toggle-close -->
+      <symbol width="23" height="23" id="icon-toggle-close">
+        <path d="m22 3-3-3-8 8-8-8-3 3 8 8-8 8 3 3 8-8 8 8 3-3-8-8 8-8Z"/>
+      </symbol>
+
+    </svg>
+
     <!-- Header -->
     <header class="main-header">
       <nav class="main-nav">
         <button class="main-nav__toggle-open" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <svg class="menu-icon-open" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 0H0v4h23V0ZM23 9H0v4h23V9ZM23 18H0v4h23v-4Z" fill="#81B3D2"/></svg>
+          <svg class="menu-icon-open" width="23" height="22">
+            <use xlink:href="#icon-toggle-open"></use>
+          </svg>
         </button>
         <a class="main-nav__logo" href="#">
           <img class="image" src="img/main-header/logo.svg" width="185" height="96" alt="Логотип города Седона.">
@@ -26,7 +42,9 @@
           <li class="nav-list__item  nav-list__item--active">
             <a class="nav-list__link link" href="index.html">Главная</a>
             <button class="main-nav__toggle-close" type="button">
-              <svg width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m22 3-3-3-8 8-8-8-3 3 8 8-8 8 3 3 8-8 8 8 3-3-8-8 8-8Z" fill="#fff"/></svg>
+              <svg width="23" height="23">
+                <use xlink:href="#icon-toggle-close"></use>
+              </svg>
             </button>
           </li>
           <li class="nav-list__item">
