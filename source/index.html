@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-apple-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
@@ -62,7 +66,11 @@
                 <p class="advantages-list__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="advantages-list__image-wrapper">
-                <img class="advantages-list__image image" src="img/about-sedona/photo-city.jpg" width="520" height="260" alt="Фото отеля.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/about-sedona/photo-city-desktop.jpg, img/about-sedona/photo-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/about-sedona/photo-city-tablet.jpg, img/about-sedona/photo-city-tablet@2x.jpg 2x">
+                  <img class="advantages-list__image image" src="img/about-sedona/photo-city.jpg" srcset="img/about-sedona/photo-city@2x.jpg 2x" width="520" height="260" alt="Фото отеля.">
+                </picture>
               </div>
             </div>
             <ul class="about-sedona__advantages-city-list advantages-city-list">
@@ -97,27 +105,30 @@
                 <p class="advantages-list__text">Да, по&nbsp;нему можно<br> пройти! Если вы<br> осмелитесь, конечно</p>
               </div>
               <div class="advantages-list__image-wrapper">
-                <img class="advantages-list__image image" src="img/about-sedona/photo-canyon.jpg" width="520" height="260" alt="Фото каньона.">
-              </div>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/about-sedona/photo-canyon-desktop.jpg, img/about-sedona/photo-canyon-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/about-sedona/photo-canyon-tablet.jpg, img/about-sedona/photo-canyon-tablet@2x.jpg 2x">
+                  <img class="advantages-list__image image" src="img/about-sedona/photo-canyon.jpg" srcset="img/about-sedona/photo-canyon@2x.jpg 2x" width="520" height="260" alt="Фото каньона.">
+                </picture>
             </div>
           </li>
-          <li class="advantages-list__item">
+          <li class="advantages-list__item advantages-list__item--row">
             <div class="advantages-list__text-wrapper advantages-list__text-wrapper--dark">
-              <h3  class="advantages-list__title">Небольшая<br> площадь</h3>
+              <h3  class="advantages-list__title advantages-list__title--width">Небольшая площадь</h3>
               <span class="advantages-list__numiration">— №3 —</span>
               <p class="advantages-list__text advantages-list__text--border">Все&nbsp;интересные места находятся очень близко</p>
             </div>
           </li>
-          <li class="advantages-list__item">
+          <li class="advantages-list__item advantages-list__item--row">
             <div class="advantages-list__text-wrapper advantages-list__text-wrapper--dark">
-              <h3  class="advantages-list__title">Красивая<br> дорога</h3>
+              <h3  class="advantages-list__title advantages-list__title--width">Красивая дорога</h3>
               <span class="advantages-list__numiration">— №4 —</span>
               <p class="advantages-list__text advantages-list__text--border">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
             </div>
           </li>
-          <li class="advantages-list__item">
+          <li class="advantages-list__item advantages-list__item--row">
             <div class="advantages-list__text-wrapper advantages-list__text-wrapper--dark">
-              <h3  class="advantages-list__title">Мало<br> туристов</h3>
+              <h3  class="advantages-list__title advantages-list__title--width">Мало туристов</h3>
               <span class="advantages-list__numiration">— №5 —</span>
               <p class="advantages-list__text">Большинство едет в&nbsp;Гранд Каньон и толпится там</p>
             </div>

@@ -1,0 +1,30 @@
+.play-button {
+  display: block;
+  width: 48px;
+  height: 54px;
+  background-image: url("../img/media/play-button.svg");
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba(229, 229, 229, 0.7);
+  }
+
+  &:focus,
+  &:focus-within {
+    color: rgba(255, 255, 255, 0.7);
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

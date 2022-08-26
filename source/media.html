@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-apple-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
@@ -119,7 +123,16 @@
           <h3 class="promo-video__title">Все еще сомневаетесь?</h3>
           <p class="promo-video__text"> Смотрите видеопрезентацию и скорее за&nbsp;билетами, пока они не подорожали в&nbsp;очередной раз!</p>
         </div>
-        <img class="promo-video__video-player video-player" src="img/media/video.jpg" width="280" height="177" alt="Видео">
+        <div class="promo-video__player-wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/media/video-desktop.jpg, img/media/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/media/video-tablet.jpg, img/media/video-tablet@2x.jpg 2x">
+            <img class="promo-video__video-player video-player" src="img/media/video-mobile.jpg" srcset="img/media/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видео">
+          </picture>
+          <button class="promo-video__play-button play-button">
+            <svg width="48" height="54" viewBox="0 0 48 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M48 27 0 54V0l48 27Z"/></svg>
+          </button>
+        </div>
       </section>
 
     </main>
