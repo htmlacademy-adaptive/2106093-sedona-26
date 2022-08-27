@@ -36,6 +36,7 @@
   right: 0;
   top: 0;
   cursor: pointer;
+  fill: rgba(129, 179, 210, 1);
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -64,6 +65,7 @@
   top: 0;
   right: 0;
   cursor: pointer;
+  fill: rgba(255, 255, 255, 1);
 
   @media (min-width: $tablet-width) {
     display: none;
