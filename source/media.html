@@ -17,7 +17,9 @@
       <nav class="main-nav">
         <button class="main-nav__toggle-open" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <svg class="menu-icon-open" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 0H0v4h23V0ZM23 9H0v4h23V9ZM23 18H0v4h23v-4Z" fill="#81B3D2"/></svg>
+          <svg class="menu-icon-open" width="23" height="22">
+            <use href="img/sprites/sprites.svg#icon-toggle-open"></use>
+          </svg>
         </button>
         <a class="main-nav__logo" href="#">
           <img class="image" src="img/main-header/logo.svg" width="185" height="96" alt="Логотип города Седона.">
@@ -26,7 +28,10 @@
           <li class="nav-list__item">
             <a class="nav-list__link link" href="index.html">Главная</a>
             <button class="main-nav__toggle-close" type="button">
-              <svg width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m22 3-3-3-8 8-8-8-3 3 8 8-8 8 3 3 8-8 8 8 3-3-8-8 8-8Z" fill="#fff"/></svg>
+              <span class="visually-hidden">Закрыть меню</span>
+              <svg width="23" height="23">
+                <use href="img/sprites/sprites.svg#icon-toggle-close"></use>
+              </svg>
             </button>
           </li>
           <li class="nav-list__item nav-list__item--active">
@@ -68,7 +73,9 @@
               <span class="card__text">Автор фото: <span class="card__author-name">Борис</span></span>
             </div>
             <div class="card__likes-container">
-              <svg class="card__like-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="m13 4-1 3v2h9v3l-3 7H8V8l5-4ZM2 11v8-8ZM14 0 7 7 6 8v11l2 2h10l2-1 3-8V9l-2-2h-7l1-4V1l-1-1ZM4 8H0v13h4V8Z"/></svg>
+              <svg class="card__like-icon" width="23" height="21">
+                <use href="img/sprites/sprites.svg#icon-like"></use>
+              </svg>
               <span class="card__like-quantity">1350</span>
             </div>
           </div>
@@ -82,7 +89,9 @@
               <span class="card__text">Автор фото: <span class="card__author-name">Сергей</span></span>
             </div>
             <div class="card__likes-container">
-              <svg class="card__like-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="m13 4-1 3v2h9v3l-3 7H8V8l5-4ZM2 11v8-8ZM14 0 7 7 6 8v11l2 2h10l2-1 3-8V9l-2-2h-7l1-4V1l-1-1ZM4 8H0v13h4V8Z"/></svg>
+              <svg class="card__like-icon" width="23" height="21">
+                <use href="img/sprites/sprites.svg#icon-like"></use>
+              </svg>
               <span class="card__like-quantity">143</span>
             </div>
           </div>
@@ -96,7 +105,9 @@
               <span class="card__text">Автор фото: <span class="card__author-name">Петр</span></span>
             </div>
             <div class="card__likes-container">
-              <svg class="card__like-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="m13 4-1 3v2h9v3l-3 7H8V8l5-4ZM2 11v8-8ZM14 0 7 7 6 8v11l2 2h10l2-1 3-8V9l-2-2h-7l1-4V1l-1-1ZM4 8H0v13h4V8Z"/></svg>
+              <svg class="card__like-icon" width="23" height="21">
+                <use href="img/sprites/sprites.svg#icon-like"></use>
+              </svg>
               <span class="card__like-quantity">96</span>
             </div>
           </div>
@@ -110,7 +121,9 @@
               <span class="card__text">Автор фото: <span class="card__author-name">Антон</span></span>
             </div>
             <div class="card__likes-container">
-              <svg  class="card__like-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="m13 4-1 3v2h9v3l-3 7H8V8l5-4ZM2 11v8-8ZM14 0 7 7 6 8v11l2 2h10l2-1 3-8V9l-2-2h-7l1-4V1l-1-1ZM4 8H0v13h4V8Z"/></svg>
+              <svg class="card__like-icon" width="23" height="21">
+                <use href="img/sprites/sprites.svg#icon-like"></use>
+              </svg>
               <span class="card__like-quantity">254</span>
             </div>
           </div>
@@ -130,7 +143,9 @@
             <img class="promo-video__video-player video-player" src="img/media/video-mobile.jpg" srcset="img/media/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видео">
           </picture>
           <button class="promo-video__play-button play-button">
-            <svg width="48" height="54" viewBox="0 0 48 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M48 27 0 54V0l48 27Z"/></svg>
+            <svg width="48" height="54">
+              <use href="img/sprites/sprites.svg#icon-play-video"></use>
+            </svg>
           </button>
         </div>
       </section>
@@ -148,19 +163,25 @@
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
-              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.948c.166-.546 0-.948-.795-.948H20.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738V5.948c0-.656-.184-.948-.74-.948H9.151c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885C4.45 5.288 4.198 5 3.527 5H.9c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551C6.315 17.341 9.37 19 12.153 19c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C19.11 18.216 19.403 19 20.405 19h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"/></g><defs><clipPath id="a"><path d="M0 0h24v24H0z"/></clipPath></defs></svg>
+              <svg class="social__icon" width="24" height="24">
+                <use href="img/sprites/sprites.svg#icon-vkontakte"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
-              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m22.44 4.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.558-2.33 2.242c-.258.258-.473.473-.97.473l.347-4.917 8.948-8.086c.39-.346-.084-.54-.604-.192L7.022 13.314 2.26 11.823c-1.036-.323-1.055-1.036.216-1.533l18.628-7.177c.862-.323 1.617.192 1.335 1.51Z"/></svg>
+              <svg class="social__icon" width="24" height="24">
+                <use href="img/sprites/sprites.svg#icon-telegram"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
-              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19.181 5H4.813C3.306 5 2 6.3 2 7.8v8.3C2 17.7 3.306 19 4.813 19h14.368c1.608 0 2.814-1.3 2.814-2.8V7.8c.1-1.5-1.206-2.8-2.814-2.8ZM9.033 15.4V8.6l6.833 3.4-6.833 3.4Z"/></svg>
+              <svg class="social__icon" width="24" height="24">
+                <use href="img/sprites/sprites.svg#icon-youtube"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -168,7 +189,9 @@
           <a class="authors__link link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="authors__text">Разработано</span>
             <span class="visually-hidden">HTML acadamy</span>
-            <svg  xmlns="http://www.w3.org/2000/svg" width="26" height="34" fill="currentColor" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+            <svg width="45" height="45">
+              <use href="img/sprites/sprites.svg#icon-academy"></use>
+            </svg>
           </a>
         </div>
       </div>
