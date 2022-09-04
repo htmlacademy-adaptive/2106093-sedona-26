@@ -29,33 +29,33 @@ export const styles = () => {
 }
 
 //HTML
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
 //Scripts
-export const sripts = () => {
+const sripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'));
 }
 
 //Images
-export const optimazeImages = () => {
+const optimazeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'));
 }
 
-export const cyoyImages = () => {
+const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'));
 }
 
 //Webp
-export const createWebp = () => {
+const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh({
       webp:{}
@@ -64,7 +64,7 @@ export const createWebp = () => {
 }
 
 //SVG
-export const svg = () => {
+const svg = () => {
   return gulp.src('source/img/**/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
@@ -81,7 +81,7 @@ const sprites = () => {
 }
 
 //Copy
-export const copy = (done) => {
+const copy = (done) => {
   gulp.src([
   'source/fonts/*.{woff2,woff}',
   'source/*.ico',
@@ -92,7 +92,7 @@ export const copy = (done) => {
 }
 
 //Clean
-export const clean = () => {
+const clean = () => {
   return deleteAsync('build');
 }
 
@@ -110,13 +110,34 @@ const server = (done) => {
   done();
 }
 
+//Reload
+const reload = (done) => {
+  browser.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/js/**/*.js', gulp.series(sripts));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+//Build
+
+const build = gulp.series(
+  clean,
+  copy,
+  optimazeImages,
+  gulp.parallel(
+    styles,
+    html,
+    sripts,
+    svg,
+    sprites,
+    createWebp)
+);
 
 export default gulp.series(
   html, styles, server, watcher
