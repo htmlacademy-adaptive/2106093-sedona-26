@@ -9,6 +9,8 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
 
 // Styles
 
@@ -46,7 +48,7 @@ export const optimazeImages = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-const cyoyImages = () => {
+export const cyoyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'));
 }
@@ -61,7 +63,21 @@ export const createWebp = () => {
 }
 
 //SVG
+export const svg = () => {
+  return gulp.src('source/img/**/*.svg')
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
+}
 
+const sprites = () => {
+  return gulp.src('source/img/**/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({
+      inLineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
+}
 
 //Copy
 
@@ -89,4 +105,5 @@ const watcher = () => {
 
 export default gulp.series(
   html, styles, server, watcher
-);
+)
+;
