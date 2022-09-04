@@ -70,14 +70,22 @@ const svg = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-const sprites = () => {
+export const sprites = () => {
   return gulp.src('source/img/**/*.svg')
-    .pipe(svgo())
+    .pipe(svgo ({
+      plugins: [
+        {
+          removeUnknownsAndDefaults: false,
+          removeViewBox: false,
+          removeUselessStrokeAndFill: false,
+          }
+      ]
+    }))
     .pipe(svgstore({
       inLineSvg: true
     }))
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+    .pipe(rename('sprites.svg'))
+    .pipe(gulp.dest('build/img/sprites', '!source/img/sprites/sprites.svg'));
 }
 
 //Copy
@@ -92,7 +100,7 @@ const copy = (done) => {
 }
 
 //Clean
-const clean = () => {
+export const clean = () => {
   return deleteAsync('build');
 }
 
