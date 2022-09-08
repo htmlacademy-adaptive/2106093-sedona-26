@@ -12,7 +12,6 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import {deleteAsync}  from "del";
-import minify  from "gulp-minify";
 
 // Styles
 
