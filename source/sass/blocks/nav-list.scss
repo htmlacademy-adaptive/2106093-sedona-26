@@ -35,6 +35,9 @@
 .nav-list--nojs {
   display: block;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
   & .main-nav__toggle-close {
     display: none;
   }
