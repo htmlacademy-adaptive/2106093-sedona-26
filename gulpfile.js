@@ -37,11 +37,18 @@ const html = () => {
 
 //Scripts
 const scripts = () => {
-  return gulp.src('source/js/*.js')
+  return gulp.src(['source/js/*.js', '!source/js/scripts.js'])
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'));
+}
+
+const scriptsRename = () => {
+  return gulp.src('source/js/scripts.js')
     .pipe(terser())
     .pipe(rename('scripts.min.js'))
     .pipe(gulp.dest('build/js'));
 }
+
 
 //Images
 const optimazeImages = () => {
@@ -66,13 +73,13 @@ const createWebp = () => {
 
 //SVG
 const svg = () => {
-  return gulp.src('source/img/**/*.svg')
+  return gulp.src(['source/img/**/*.svg', '!source/img/sprites/**/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
 
 const sprites = () => {
-  return gulp.src('source/img/**/*.svg', '!source/img/sprites/sprites.svg')
+  return gulp.src(['source/img/**/*.svg', '!source/img/sprites/sprites.svg'])
     .pipe(svgo ({
       plugins: [
         {
@@ -85,7 +92,7 @@ const sprites = () => {
     .pipe(svgstore({
       inLineSvg: true
     }))
-    .pipe(rename('sprites.svg'))
+    .pipe(rename('sprites.min.svg'))
     .pipe(gulp.dest('build/img/sprites'));
 }
 
@@ -144,6 +151,7 @@ export const build = gulp.series(
     scripts,
     svg,
     sprites,
+    scriptsRename,
     createWebp)
 );
 
@@ -156,6 +164,7 @@ export default gulp.series(
     styles,
     html,
     scripts,
+    scriptsRename,
     svg,
     sprites,
     createWebp),
