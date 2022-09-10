@@ -1,13 +1,18 @@
-let heart = document.querySelector('.card__like-icon');
-let likesNumber = document.querySelector('.card__like-quantity');
-let counter = likesNumber.textContent;
+const mediaContainer = document.querySelector('.media');
 
-heart.onclick = function () {
-  if (heart.classList.contains('added')) {
-    counter--;
-  } else {
-    counter++;
-  }
-  likesNumber.textContent = counter;
-  heart.classList.toggle('card__like-icon--added');
-};
+if(mediaContainer) {
+  mediaContainer.addEventListener('click', function(evt) {
+    const button = evt.target.closest('.card__like-icon');
+    if(button) {
+      const likeNumber = button.nextElementSibling;
+      let counter = likeNumber.textContent;
+      if (button.classList.contains('card__like-icon--added')) {
+        counter--;
+      } else {
+        counter++;
+      }
+      likeNumber.textContent = counter;
+      button.classList.toggle('card__like-icon--added');
+    }
+  })
+}
