@@ -3,7 +3,6 @@
   padding: 0;
   list-style: none;
   align-items: center;
-  z-index: 2;
   position: absolute;
   top: 0;
   width: 100%;
@@ -12,11 +11,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    z-index: 2;
   }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     background-color: transparent;
+    z-index: 0;
   }
 }
 
