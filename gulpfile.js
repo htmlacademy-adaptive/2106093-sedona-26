@@ -72,7 +72,7 @@ const svg = () => {
 }
 
 const sprites = () => {
-  return gulp.src('source/img/**/*.svg')
+  return gulp.src('source/img/**/*.svg', '!source/img/sprites/sprites.svg')
     .pipe(svgo ({
       plugins: [
         {
@@ -86,7 +86,7 @@ const sprites = () => {
       inLineSvg: true
     }))
     .pipe(rename('sprites.svg'))
-    .pipe(gulp.dest('build/img/sprites', '!source/img/sprites/sprites.svg'));
+    .pipe(gulp.dest('build/img/sprites'));
 }
 
 //Copy
@@ -130,7 +130,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/**/*.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html)).on('change', browser.reload);
 }
 
 //Build
