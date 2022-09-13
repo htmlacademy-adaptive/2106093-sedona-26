@@ -11,6 +11,8 @@
 }
 
 .advantages-list__wrapper {
+  min-width: 100%;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -48,11 +50,16 @@
 .advantages-list__item {
   display: flex;
   flex-wrap: wrap;
+  min-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 33.33%;
+  }
 }
 
 .advantages-list__item--row {
   @media (min-width: $tablet-width) {
-    width: 33.33%;
+    min-width: 33.33%;
   }
 }
 
@@ -99,9 +106,11 @@
 .advantages-list__text-wrapper--dark {
   background-color: #eeeeee;
   padding: 26px 26px 0;
+  min-width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 42px 40px;
+    min-width: 33.33%;
   }
 
   @media (min-width: $desktop-width) {
