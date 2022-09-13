@@ -17,6 +17,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #333333;
+  box-sizing: content-box;
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;

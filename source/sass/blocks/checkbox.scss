@@ -8,7 +8,7 @@
 
 .checkbox__fake {
   display: flex;
-  width: 46px;
+  min-width: 46px;
   height: 46px;
   border-radius: 4px;
   background-color: rgba(242, 242, 242, 1);

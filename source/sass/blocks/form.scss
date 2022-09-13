@@ -9,11 +9,11 @@
 .form:nth-child(1),
 .form:nth-child(2) {
   @media (min-width: $tablet-width) {
-    width: 280px;
+    max-width: 40%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
+    max-width: 400px;
   }
 }
 
@@ -21,10 +21,10 @@
   @media (min-width: $tablet-width) {
     content: "";
     width: 1px;
-    height: 90%;
+    height: 338px;
     background-color: #dbdbdb;
     position: absolute;
-    right: -7%;
+    right: 50%;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,6 +44,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 
 .form__label--phone::after {
