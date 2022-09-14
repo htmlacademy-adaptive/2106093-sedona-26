@@ -30,20 +30,33 @@
 }
 
 .advantages-list__title {
-  margin: 0 0 11px;
+  margin: 0 0 15px;
   font-size: 18px;
   color: currentColor;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 215px;
+    margin: 0 auto 13px;
   }
 }
 
 .advantages-list__title--width {
   @media (min-width: $tablet-width) {
     max-width: 159px;
-    margin: 0 auto 11px;
+    margin: 0 auto 12px;
   }
 }
 
@@ -65,16 +78,20 @@
 
 .advantages-list__numiration {
   display: block;
-  margin: 0 0 11px;
+  margin: 0 0 17px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 26px;
+    margin: 0 0 22px;
   }
 }
 
 .advantages-list__image {
   object-fit: cover;
   min-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-height: 256px;
+  }
 }
 
 .advantages-list__text-wrapper {
@@ -90,7 +107,7 @@
 .advantages-list__text-wrapper--light {
   color: #ffffff;
   background-color: #81b3d2;
-  padding: 40px 16px 10px;
+  padding: 51px 16px 16px 11px;
 
   @media (min-width: $tablet-width) {
     padding: 40px 26px 24px;
@@ -102,15 +119,25 @@
   }
 }
 
+.advantages-list__text-wrapper--light--padding {
+  padding: 39px 9px 10px 11px;
+
+  @media (min-width: $tablet-width) {
+    padding: 41px 8px 10px 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 49px 8px 10px 16px;
+  }
+}
 
 .advantages-list__text-wrapper--dark {
   background-color: #eeeeee;
-  padding: 26px 26px 0;
+  padding: 27px 26px 0 28px;
   min-width: 100%;
 
   @media (min-width: $tablet-width) {
-    padding: 42px 40px;
-    min-width: 33.33%;
+    padding: 42px 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,18 +147,47 @@
 
 .advantages-list__text {
   font-size: 14px;
-  margin: 0;
+  margin: 0 auto;
   padding-bottom: 24px;
+  max-width: 265px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+    max-width: 195px;
+
+    & br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 288px;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .advantages-list__text--border {
   border-bottom: solid 1px rgba(214, 214, 214, 1);
+  max-width: 250px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 283px;
+  }
+}
+
+.advantages-list__text--width-small {
+  @media (min-width: $desktop-width) {
+    max-width: 230px;
   }
 }

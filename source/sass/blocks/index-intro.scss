@@ -12,8 +12,9 @@
     background-image: url("../img/intro/index-intro/back-mobile@2x.jpg");
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 768px) {
     background-image: url("../img/intro/index-intro/back-tablet.jpg");
+    padding: 78px 20px 90px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro/index-intro/back-tablet@2x.jpg");
