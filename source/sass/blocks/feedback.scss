@@ -1,10 +1,10 @@
 .feedback {
   @media (min-width: $tablet-width) {
-    padding: 0 40px 28px;
+    padding: 0 60px 46px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 100px 28px;
+    padding: 0 100px 61px;
   }
 }
 
@@ -22,20 +22,37 @@
 
   @media (min-width: $tablet-width) {
     max-width: 435px;
-    padding: 64px 0 78px;
+    padding: 64px 0 82px;
     margin: 0 auto;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 114px 0 46px;
   }
 }
 
 .feedback__form {
-  padding: 24px 20px 39px;
+  padding: 28px 20px 33px 20px;
   display: flex;
   flex-direction: column;
   row-gap: 16px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+}
+
+.feedback__form--padding {
+  padding: 24px 20px 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 20px 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 56px 37px;
+    row-gap: 35px;
   }
 }
 

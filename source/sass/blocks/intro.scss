@@ -24,6 +24,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/intro/intro/back-intro-desktop.jpg");
+    padding: 95px 20px 126px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro/intro/back-intro-desktop@2x.jpg");
