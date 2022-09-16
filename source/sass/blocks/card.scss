@@ -15,9 +15,25 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .card:first-of-type {
+    grid-column: 1/4;
+  }
+}
+
 .card__photo {
   object-fit: cover;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 267px;
+  }
+}
+
+.card__photo--big {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .card__author-container {
@@ -27,7 +43,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 20px 15px;
+    padding: 19px 16px 7px 19px;
     background-color: #f2f2f2;
   }
 
@@ -39,6 +55,7 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
+    padding: 18px 16px 6px;
   }
 }
 
@@ -63,6 +80,10 @@
 
 .card__title {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 }
 
 .card__likes-container {
@@ -70,6 +91,10 @@
   display: flex;
   gap: 14px;
   align-items: baseline;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -17px;
+  }
 }
 
 .card__author-name {

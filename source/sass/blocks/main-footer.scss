@@ -41,3 +41,15 @@
     margin: 0 0 0 10px;
   }
 }
+
+.main-footer__container--padding {
+  padding: 21px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 47px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 111px 0;
+  }
+}

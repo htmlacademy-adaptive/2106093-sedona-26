@@ -44,3 +44,13 @@
     margin: 0 auto 31px;
   }
 }
+
+.heading__title--media {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 26px;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
