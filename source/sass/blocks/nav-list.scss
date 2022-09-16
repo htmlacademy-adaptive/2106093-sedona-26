@@ -36,6 +36,7 @@
 
 .nav-list--nojs {
   display: block;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
