@@ -1,1 +1,0 @@
-let heart=document.querySelector(".card__like-icon"),likesNumber=document.querySelector(".card__like-quantity"),counter=likesNumber.textContent;heart.onclick=function(){heart.classList.contains("added")?counter--:counter++,likesNumber.textContent=counter,heart.classList.toggle("card__like-icon--added")};

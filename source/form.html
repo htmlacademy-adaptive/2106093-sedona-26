@@ -9,6 +9,9 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-apple-180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="prelolad" href="/css/style.min.css" as="style" crossorigin="anonymous">
+    <link rel="prelolad" href="/js/scripts.min.js" as="script" crossorigin="anonymous">
+    <link rel="prelolad" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
 
@@ -18,10 +21,10 @@
         <button class="main-nav__toggle-open" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <svg class="menu-icon-open" width="23" height="22">
-            <use href="img/sprites/sprites.svg#icon-menu-open"></use>
+            <use href="img/sprites/sprites.min.svg#icon-menu-open"></use>
           </svg>
         </button>
-        <a class="main-nav__logo" href="#">
+        <a class="main-nav__logo" href="index.html">
           <img class="image" src="img/main-header/logo.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
         <ul class="main-nav__list nav-list nav-list--close nav-list--nojs">
@@ -30,7 +33,7 @@
             <button class="main-nav__toggle-close" type="button">
               <span class="visually-hidden">Закрыть меню</span>
               <svg width="23" height="23">
-                <use href="img/sprites/sprites.svg#icon-menu-close"></use>
+                <use href="img/sprites/sprites.min.svg#icon-menu-close"></use>
               </svg>
             </button>
           </li>
@@ -58,7 +61,7 @@
       <!-- Секция Feedback -->
       <section class="feedback">
         <div class="feedback__heading heading">
-          <h2 class="heading__title heading__title--s30">Оставьте свой отзыв</h2>
+          <h2 class="heading__title heading__title--s30 heading__title--form">Оставьте свой отзыв</h2>
           <p class="heading__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
         </div>
 
@@ -66,17 +69,17 @@
         <form class="feedback__general-form" action="https://echo.htmlacademy.ru/" method="get">
 
           <!-- ФИО -->
-          <div class="feedback__form form">
-            <h3 class="form__title title">Представьтесь:</h3>
-            <label class="form__label" for="name">
+          <div class="feedback__form  form">
+            <h3 class="form__title form__title--margin-left title">Представьтесь:</h3>
+            <label class="form__label form__label--margin" for="name">
               <span class="form__label-title">Имя*:</span>
               <input class="form__input input" name="name" id="name" type="text" value="Пётр" placeholder="Укажите имя" required>
             </label>
-            <label class="form__label" for="surname">
+            <label class="form__label form__label--margin" for="surname">
               <span class="form__label-title">Фамилия*:</span>
               <input class="form__input input" name="surname" id="surname" type="text" value="Пустота" placeholder="Укажите фамилию" required>
             </label>
-            <label class="form__label" for="patronymic">
+            <label class="form__label form__label--margin" for="patronymic">
               <span class="form__label-title">Отчество:</span>
               <input class="form__input input" name="patronymic" id="patronymic" type="text" value="Викторович" placeholder="Укажите отчество">
             </label>
@@ -85,20 +88,20 @@
           <!-- Контакты -->
           <div class="feedback__form form">
             <h3 class="form__title title form__title--margin">Контактная информация:</h3>
-            <label class="form__label form__label--phone" for="phone">
+            <label class="form__label form__label--phone form__label--margin" for="phone">
               <span class="form__label-title">Контактный телефон*:</span>
               <input class="form__input input input--phone" name="phone" id="phone" type="tel" placeholder="Введите телефон" required>
             </label>
-            <label class="form__label form__label--mail" for="user_email">
+            <label class="form__label form__label--mail form__label--margin" for="user_email">
               <span class="form__label-title">Электронная почта*:</span>
-              <input class="form__input input" type="email" name="user-email" id="user_email" placeholder="Введите email" required>
+              <input class="form__input input input--mail" type="email" name="user-email" id="user_email" placeholder="Введите email" required>
             </label>
           </div>
 
           <!-- Впечатления -->
-          <div class="feedback__form form">
+          <div class="feedback__form feedback__form--padding form">
             <h3 class="form__title form__title--border title">Ваше общее впечатление:</h3>
-            <ul class="form__list form__list--row">
+            <ul class="form__list-radio form__list--row">
               <li class="form__item">
                 <label class="form__label form__label--row" for="positive_feedback">
                   <input class="form__radio radio" type="radio" name="feedback" id="positive_feedback" checked>
@@ -124,9 +127,9 @@
           </div>
 
           <!-- Достопримечательности -->
-          <div class="feedback__form form">
+          <div class="feedback__form feedback__form--padding form">
             <h3 class="form__title form__title--border title">Посещенные<br> достопримечательности:</h3>
-            <ul class="form__list form__list--row">
+            <ul class="form__list-checkbox form__list--row">
               <li class="form__item">
                 <label class="form__label form__label--row" for="diablo_bridge">
                   <input class="form__checkbox checkbox" type="checkbox" name="feedback" id="diablo_bridge" checked>
@@ -159,7 +162,7 @@
           </div>
 
           <!-- Комментарий -->
-          <div class="feedback__form form">
+          <div class="feedback__form feedback__form--padding-no form">
             <h3 class="form__title form__title--border title">Опишите свои эмоции:</h3>
             <textarea class="form__input input input--comment" name="comment" type="text" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
@@ -185,7 +188,7 @@
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
               <svg class="social__icon" width="24" height="24">
-                <use href="img/sprites/sprites.svg#vkontakte-icon"></use>
+                <use href="img/sprites/sprites.min.svg#vkontakte-icon"></use>
               </svg>
             </a>
           </li>
@@ -193,7 +196,7 @@
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
               <svg class="social__icon" width="24" height="24">
-                <use href="img/sprites/sprites.svg#telegram-icon"></use>
+                <use href="img/sprites/sprites.min.svg#telegram-icon"></use>
               </svg>
             </a>
           </li>
@@ -201,7 +204,7 @@
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
               <svg class="social__icon" width="24" height="24">
-                <use href="img/sprites/sprites.svg#youtube-icon"></use>
+                <use href="img/sprites/sprites.min.svg#youtube-icon"></use>
               </svg>
             </a>
           </li>
@@ -211,7 +214,7 @@
             <span class="authors__text">Разработано</span>
             <span class="visually-hidden">HTML acadamy</span>
             <svg width="45" height="45">
-              <use href="img/sprites/sprites.svg#htmlacademy-icon"></use>
+              <use href="img/sprites/sprites.min.svg#htmlacademy-icon"></use>
             </svg>
           </a>
         </div>
@@ -223,28 +226,28 @@
     <div class="modal-container modal-container--error-close">
       <div class="modal modal--error">
         <div class="modal__heading-error">
-          <h2 class="modal__title">Что то пошло не так!</h2>
-          <p class="modal__subtitle">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <h2 class="modal__title modal__title-error">Что то пошло не так!</h2>
+          <p class="modal__subtitle modal__subtitle--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </div>
         <div class="modal__button-wrapper-error">
-          <button class="modal__button button" type="button">Ок</button>
+          <button class="modal__button modal__button--error button" type="button">Ок</button>
         </div>
       </div>
     </div>
 
     <!-- Модальное окно "Отправлено" -->
-    <div class="modal-container modal-container--sent-close">
+    <div class="modal-container  modal-container--sent-close">
       <div class="modal modal--sent">
         <div class="modal__heading-sent">
           <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-          <p class="modal__subtitle">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <p class="modal__subtitle modal__subitle--sentt">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
         </div>
         <div class="modal__button-wrapper-sent">
-          <button class="modal__button button" type="button">Закрыть окно</button>
+          <button class="modal__button modal__button--sent button" type="button">Закрыть окно</button>
         </div>
       </div>
     </div>
 
-    <script src="js/menu-buttons.js"></script>
+    <script src="js/scripts.min.js" type="module"></script>
   </body>
 </html>

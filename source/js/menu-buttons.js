@@ -5,10 +5,12 @@ let navToggleClose = document.querySelector('.main-nav__toggle-close');
 navList.classList.remove('nav-list--nojs');
 
 navToggleOpen.addEventListener('click', function () {
-  if (navList.classList.contains('nav-list--close')) {
-    navList.classList.remove('nav-list--close');
-    navList.classList.add('nav-list--open');
+  if (!navList.classList.contains('nav-list--close')) {
+    return;
   }
+
+  navList.classList.remove('nav-list--close');
+  navList.classList.add('nav-list--open');
 });
 
 navToggleClose.addEventListener('click', function () {

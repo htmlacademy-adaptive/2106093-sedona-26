@@ -1,13 +1,14 @@
 .heading__title {
   font-size: 18px;
   line-height: 26px;
-  margin: 0 auto 38px;
+  margin: 0 auto 37px;
   color: #000000;
   max-width: 270px;
 
   @media (min-width: $tablet-width) {
     max-width: 520px;
     font-size: 21px;
+    margin: 0 auto 30px;
   }
 }
 
@@ -29,5 +30,27 @@
     br {
       display: block;
     }
+  }
+}
+
+.heading__title--form {
+  margin: 0 auto 26px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 31px;
+  }
+}
+
+.heading__title--media {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 26px;
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 }

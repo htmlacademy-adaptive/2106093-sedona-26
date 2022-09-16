@@ -12,15 +12,12 @@
   margin: 0 auto;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  max-width: $mobile-width;
+  min-width: $mobile-width;
   min-height: 100%;
   text-transform: uppercase;
   text-align: center;
   color: #333333;
-
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-  }
+  box-sizing: content-box;
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
