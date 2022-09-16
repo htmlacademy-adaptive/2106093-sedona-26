@@ -1,0 +1,1 @@
+const mediaContainer=document.querySelector(".media");mediaContainer&&mediaContainer.addEventListener("click",(function(e){const t=e.target.closest(".card__like-icon");if(t){const e=t.nextElementSibling;let n=e.textContent;t.classList.contains("card__like-icon--added")?n--:n++,e.textContent=n,t.classList.toggle("card__like-icon--added")}}));
