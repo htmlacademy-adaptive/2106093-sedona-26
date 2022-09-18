@@ -27,10 +27,6 @@
     position: absolute;
     right: 50%;
   }
-
-  @media (min-width: $desktop-width) {
-    right: -15%;
-  }
 }
 
 .form__label {
