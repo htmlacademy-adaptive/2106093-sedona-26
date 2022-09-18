@@ -27,6 +27,13 @@
   }
 }
 
+.about-sedona__advantages-list {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .about-sedona__advantages-city-list {
   margin: 0 0 53px 0;
 

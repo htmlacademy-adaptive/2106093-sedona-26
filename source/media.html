@@ -63,8 +63,8 @@
       <!-- Секция Медиа -->
       <section class="media">
         <div class="media__heading heading">
-            <h2 class="heading__title heading__title--media">Фото и Видео</h2>
-            <p class="heading__subtitle">Не&nbsp;можете решиться на&nbsp;путешествие из-за&nbsp;курса?<br> Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.</p>
+          <h2 class="heading__title heading__title--media">Фото и Видео</h2>
+          <p class="heading__subtitle">Не&nbsp;можете решиться на&nbsp;путешествие из-за&nbsp;курса?<br> Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.</p>
         </div>
 
         <!-- Фото-карточка 1 -->
@@ -173,11 +173,15 @@
         </div>
         <div class="promo-video__player-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/media/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/media/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/media/video-mobile.webp 1x, img/media/video-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/media/video-desktop.jpg, img/media/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/media/video-tablet.jpg, img/media/video-tablet@2x.jpg 2x">
             <img class="promo-video__video-player video-player" src="img/media/video-mobile.jpg" loading="lazy" srcset="img/media/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видео">
           </picture>
-          <button class="promo-video__play-button play-button">
+          <button type="button" class="promo-video__play-button play-button" title="Воспроизветси">
             <svg width="48" height="54">
               <use href="img/sprites/sprites.min.svg#play-button-icon"></use>
             </svg>

@@ -1,5 +1,5 @@
 .main-footer__container {
-  padding: 38px 0 0;
+  padding: 38px 0 23px;
   display: flex;
   align-content: center;
   flex-direction: column;
@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 36px 101px;
+    padding: 36px 113px 36px 107px;
   }
 }
 
@@ -43,13 +43,13 @@
 }
 
 .main-footer__container--padding {
-  padding: 21px 0 0;
+  padding: 21px 0 23px;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 47px 0;
+    padding: 20px 47px 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 111px 0;
+    padding: 20px 111px 36px;
   }
 }
