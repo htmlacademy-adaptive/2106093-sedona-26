@@ -191,3 +191,13 @@
     max-width: 230px;
   }
 }
+
+.advantages-list__text--width {
+  @media (min-width: $desktop-width) {
+    max-width: 300px;
+
+    br {
+      display: none;
+    }
+  }
+}

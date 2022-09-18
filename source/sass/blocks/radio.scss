@@ -1,47 +1,8 @@
 .radio {
   appearance: none;
 
-  &:checked ~ .radio__fake::before {
+  &:checked ~ .radio-fake::before {
     width: 16px;
     height: 16px;
   }
-}
-
-.radio__fake {
-  display: flex;
-  min-width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background-color: rgba(242, 242, 242, 1);
-  align-items: center;
-  justify-content: center;
-  margin-left: -4px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 0;
-  }
-
-  &::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background-color: #333333;
-  }
-}
-
-.form__label:hover .radio__fake {
-  background-color: rgba(229, 229, 229, 1);
-}
-
-.form__label:focus .radio__fake,
-.form__label:focus-within .radio__fake {
-  background-color: rgba(213, 213, 213, 1);
-  outline: 0;
-  outline-offset: 0;
-}
-
-.form__label:active .radio__fake::before {
-  background-color: rgba(51, 51, 51, 0.3);
 }
