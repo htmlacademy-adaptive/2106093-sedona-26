@@ -53,6 +53,10 @@
   }
 }
 
+.advantages-list__title--black {
+  color: rgba(0, 0, 0, 1);
+}
+
 .advantages-list__title--width {
   @media (min-width: $tablet-width) {
     max-width: 159px;

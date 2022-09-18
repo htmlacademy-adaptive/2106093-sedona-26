@@ -110,7 +110,7 @@
   margin: 0 auto;
   min-width: 281px;
   line-height: 26px;
-  font-size: 18px;
+  font-size: 21px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 -7px;
@@ -125,6 +125,7 @@
 
 .form__title {
   margin: 0 0 4px;
+  color: rgba(0, 0, 0, 1);
 
   @media (min-width: $tablet-width) {
     margin: 0 0 11px;
