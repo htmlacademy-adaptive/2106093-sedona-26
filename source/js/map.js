@@ -7,4 +7,3 @@ mapOff.classList.add('map__offline--js');
 
 
 
-
