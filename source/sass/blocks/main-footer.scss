@@ -6,7 +6,6 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    // padding: 31px 46px;
     padding: 31px 50px;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +13,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 36px 113px 36px 107px;
     padding: 34px 110px 36px 107px;
   }
 }
