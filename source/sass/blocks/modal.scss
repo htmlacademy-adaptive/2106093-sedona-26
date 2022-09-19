@@ -18,12 +18,12 @@
 .modal__button--sent {
   margin: 0 auto;
   min-width: 275px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
     min-width: 458px;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 26px;
   }
 }
@@ -36,7 +36,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 271px;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 26px;
   }
 }
@@ -52,15 +52,24 @@
 }
 
 .modal__heading-sent {
-  padding: 45px 38px 12px;
+  padding: 39px 39px 30px 34px;
   max-width: $mobile-width;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     max-width: 640px;
-    padding: 53px 110px 55px;
+    padding: 53px 99px 30px 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 99px 34px 97px;
   }
 }
+
+.modal__subitle--sent {
+  margin: 0 0 20px;
+}
+
 
 .modal__button-wrapper-sent {
   padding: 20px;

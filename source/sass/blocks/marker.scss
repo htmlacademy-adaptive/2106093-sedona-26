@@ -1,21 +1,16 @@
-.play-button {
+.marker {
   display: block;
-  width: 48px;
-  height: 54px;
-  background-color: transparent;
-  border: none;
+  width: 27px;
+  height: 27px;
+  background-color: rgba(129, 179, 211, 1);
+  border: solid 5px rgba(255, 255, 255, 1);
+  border-radius: 50%;
   position: absolute;
-  top: 49%;
-  right: 47%;
+  top: 51%;
+  right: 50%;
   transform: translate(50%, -50%);
-  color: rgba(255, 255, 255, 0.7);
   padding: 0;
   cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    top: 50%;
-    right: 50%;
-  }
 
   &:hover {
     color: rgba(229, 229, 229, 0.7);

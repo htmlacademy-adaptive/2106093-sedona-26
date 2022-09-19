@@ -15,6 +15,7 @@
   margin: 0 0 20px;
   font-size: 21px;
   line-height: 26px;
+  color: rgba(0, 0, 0, 1);
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -34,15 +35,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 38px;
+    margin: 0 0 19px;
+    padding: 0 146px;
 
     br {
       display: block;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    margin: 0 0 43px;
+  @media (min-width: $desktop-width) {
+    margin: 0 0 23px;
+    padding: 0 364px;
   }
 }
 

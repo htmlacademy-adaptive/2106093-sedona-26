@@ -145,14 +145,15 @@ export const build = gulp.series(
   clean,
   copy,
   optimazeImages,
+  createWebp,
   gulp.parallel(
     styles,
     html,
     scripts,
     svg,
     sprites,
-    scriptsRename,
-    createWebp)
+    scriptsRename
+    )
 );
 
 //Default
@@ -160,14 +161,14 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
+  createWebp,
   gulp.parallel(
     styles,
     html,
     scripts,
     scriptsRename,
     svg,
-    sprites,
-    createWebp),
+    sprites),
     gulp.series(
     server,
     watcher)
