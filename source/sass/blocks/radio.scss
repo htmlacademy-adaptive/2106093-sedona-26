@@ -1,8 +1,0 @@
-.radio {
-  appearance: none;
-
-  &:checked ~ .radio-fake::before {
-    width: 16px;
-    height: 16px;
-  }
-}

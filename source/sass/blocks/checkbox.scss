@@ -1,7 +1,0 @@
-.checkbox {
-  appearance: none;
-
-  &:checked ~ .checkbox-fake::before {
-    background-image: url("../img/form/tick.svg");
-  }
-}
