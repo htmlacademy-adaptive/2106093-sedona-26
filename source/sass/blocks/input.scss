@@ -33,7 +33,8 @@
 
   @media (min-width: $desktop-width) {
     max-width: 782px;
-    margin: 0 120px 21px 113px;
+    margin: 0 120px 18px 113px;
+    min-height: 160px;
   }
 }
 

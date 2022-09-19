@@ -198,3 +198,11 @@
     }
   }
 }
+
+.advantages-list__text--braker {
+  padding: 27px 32px 0 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 38px;
+  }
+}

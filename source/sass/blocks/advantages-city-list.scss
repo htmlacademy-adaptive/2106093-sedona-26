@@ -71,11 +71,18 @@
 }
 
 .advantages-city-list__text--width {
+  @media (min-width: $tablet-width) {
+
+    br {
+      display: none;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 300px;
 
     br {
-      display: none;
+      display: block;
     }
   }
 }
@@ -110,5 +117,25 @@
 .advantages-city-list__title--margin {
   @media (min-width: $tablet-width) {
     margin-top: -14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -77px;
+  }
+}
+
+.advantages-city-list__item--margin {
+  margin-top: -3px;
+  margin-left: -3px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 32px 8px;
+    margin-top: -8px;
+    margin-left: -0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-left: 0;
   }
 }
