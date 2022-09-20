@@ -61,3 +61,42 @@
     flex-direction: column;
   }
 }
+
+.feedback__button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 14px 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding: 27px 0 18px 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px 0 122px;
+  }
+}
+
+.feedback__button {
+  margin: 0 auto;
+  min-width: 281px;
+  line-height: 26px;
+  font-size: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 -7px;
+    min-width: 325px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 383px;
+    padding: 20px 15px 14px 7px;
+  }
+}
+
+.feedback__attantion {
+  margin-left: auto;
+  margin-top: 6px;
+}
