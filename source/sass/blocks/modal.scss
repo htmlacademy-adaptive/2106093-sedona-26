@@ -16,7 +16,7 @@
 }
 
 .modal__button--sent {
-  margin: 0 auto;
+  margin: -17px auto 0;
   min-width: 275px;
   font-size: 18px;
   line-height: 26px;
@@ -25,6 +25,7 @@
     min-width: 458px;
     font-size: 21px;
     line-height: 26px;
+    margin-top: 20px;
   }
 }
 
@@ -58,16 +59,17 @@
 
   @media (min-width: $tablet-width) {
     max-width: 640px;
-    padding: 53px 99px 30px 97px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 50px 99px 34px 97px;
+    padding: 50px 99px 55px 97px;
   }
 }
 
-.modal__subitle--sent {
-  margin: 0 0 20px;
+.modal__subtitle--sent {
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 
@@ -76,7 +78,7 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 91px;
+    padding: 20px 91px 44px;
   }
 }
 
@@ -109,14 +111,5 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
-  }
-}
-
-.modal__subtitle--sent {
-  margin: 0;
-  margin-bottom: 36px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
   }
 }
